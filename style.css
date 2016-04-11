@@ -1,0 +1,323 @@
+@charset "utf-8";
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset ,
+legend,
+input,
+textarea ,
+select {
+      margin: 0;
+      padding: 0
+}
+body {
+      font: 12px "微软雅黑" , "宋体", "Arial Narrow" , HELVETICA;
+      background: /*url(../img/body_bg.png)*/ #e1ddc9;
+      -webkit-text-size-adjust: 100%;
+}
+a {
+      color: #2d374b ;
+      text-decoration: none
+}
+a:hover {
+      color: #cd0200 ;
+      text-decoration: underline
+}
+em {
+      font-style: normal
+}
+li {
+      list-style: none
+}
+img {
+      border: 0 ;
+      vertical-align: middle
+}
+table {
+      border-collapse: collapse ;
+      border-spacing: 0
+}
+p {
+      word-wrap: break-word
+}
+
+/*  float */
+.f-l {
+      float: left ;
+}
+.f-r {
+      float: right ;
+}
+/* clear float */
+.clear {
+      clear: both ;
+      width: 100%;
+      height: 5 px
+}
+.clear-18 {
+      clear: both ;
+      width: 100%;
+      height: 18px
+}
+.clear-no {
+      clear: both ;
+}
+/* family */
+.song {
+      font-family: "宋体" ;
+}
+
+#header {width: 100%;height: 8rem; background: #4276B6;border-bottom: 1px solid #0172FD;}
+.header {margin: auto;width: 70%;color: #F3F3F3;padding-top: 20px;}
+.header h1 { text-align: center;font-family: " 微软雅黑 ";font-size: 2.6rem; font-weight: 900;}
+.header h2 {text-align: center;display: inherit;font-family: " 宋体 ";font-size: 1.2rem;}
+
+#label { position: relative;top: -1.5rem; left: 0;width: 78%;float: left;height: 3rem;border: 1px solid #f0b500;background-color: #FFCC00;}
+#label p {text-align: center;width: 8rem;height: 2rem;background-color: #FFE788;line-height: 2rem;font-size: 1rem; margin-top: 8px;    margin-left: 32%;border: 1px solid #f0b500;}
+
+#github-logo {margin-top: -32px;margin-right: 6px;width: 40px;height: 40px;float: right; background: url(../img/octocat-logo.png) no-repeat ;}
+/* content  */
+#content {margin: auto; position: relative; top: 1rem;width: 50rem;height: auto;background: #fff;}
+/* part */
+.part {margin:2rem;width: 100%;height: 14rem;}
+.part h3 a {color:#A03333;font-size:0.5rem;padding-left:2rem;}
+/* p-content  */
+.p-content {width: 90%; height: 10rem; background-color: #000;}
+/* logo */
+.logo{margin:0.5rem auto;width:40%;animation:myfirst 5s;
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */}
+
+@keyframes myfirst
+{
+from {width:100%;}
+to {width:40%;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {width:100%;}
+to {width:40%;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {width:100%;}
+to {width:40%;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {width:100%;}
+to {width:40%;}
+}
+.box-bd{position:relative; padding-top: 10px;}
+.ben,.dai{position:absolute;width:80px;height:80px;line-height:80px;border-radius:50px;font-size:50px;font-family:"宋体";font-weight:800;color:#fff;border:5px solid #fefefe;text-align:center;}
+	.ben {float:left;left:0%;animation:my1 5s;
+-moz-animation:my1 5s; /* Firefox */
+-webkit-animation:my1 5s; /* Safari and Chrome */
+-o-animation:my1 5s; /* Opera */}
+@keyframes my1
+{
+0% {left:0%}
+50% {left:10%}
+100% {left:0%}
+}
+@-moz-keyframes my1 /* Firefox */
+{
+0% {left:0%}
+50% {left:10%}
+100% {left:0%}
+}
+@-webkit-keyframes my1 /* Safari and Chrome */
+{
+0% {left:0%}
+50% {left:10%}
+100% {left:0%}
+}
+@-o-keyframes my1 /* Opera */
+{
+0% {left:0%}
+50% {left:10%}
+100% {left:0%}
+}
+.dai {left:24%;}
+
+
+.box-love{position:relative;}
+#l,#v,#e{position:absolute;font-size:50px;font-family:"宋体";font-weight:800;}
+		
+	#l{color:#FFF900;left:0;top: 60px;
+	animation:show0 10s;
+-moz-animation:show0 10s; /* Firefox */
+-webkit-animation:show0 10s; /* Safari and Chrome */
+-o-animation:show0 10s; /* Opera */}
+@keyframes show0
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+@-moz-keyframes show0 /* Firefox */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+@-webkit-keyframes show0 /* Safari and Chrome */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+@-o-keyframes show0 /* Opera */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+	#o{animation:show1 10s;
+-moz-animation:show1 10s; /* Firefox */
+-webkit-animation:show1 10s; /* Safari and Chrome */
+-o-animation:show1 10s; /* Opera */}
+@keyframes show1
+{
+ 0%,30% {opacity:0; filter:alpha(opacity=0);}
+ 100% {opacity:1; filter:alpha(opacity=1);}
+}
+@-moz-keyframes show1 /* Firefox */
+{
+ 0%,30% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+@-webkit-keyframes show1 /* Safari and Chrome */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+@-o-keyframes show1 /* Opera */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+	
+	#v{color:#F207FF;
+	left:35%;
+	top:90px;
+	animation:show2 10s;
+-moz-animation:show2 10s; /* Firefox */
+-webkit-animation:show2 10s; /* Safari and Chrome */
+-o-animation:show2 10s; /* Opera */}
+@keyframes show2
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+@-moz-keyframes show2 /* Firefox */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+@-webkit-keyframes show2 /* Safari and Chrome */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+@-o-keyframes show2 /* Opera */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:90px;opacity:1; filter:alpha(opacity=1);}
+}
+
+	#e{color:#00FF45;left:50%;top:60px;
+	animation:show3 10s;
+-moz-animation:show3 10s; /* Firefox */
+-webkit-animation:show3 10s; /* Safari and Chrome */
+-o-animation:show3 10s; /* Opera */}
+@keyframes show3
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+@-moz-keyframes show3 /* Firefox */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+@-webkit-keyframes show3 /* Safari and Chrome */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+@-o-keyframes show3 /* Opera */
+{
+ 0%,50% {top:-100px;opacity:0; filter:alpha(opacity=0);}
+ 100% {top:60px;opacity:1; filter:alpha(opacity=1);}
+}
+.heart{
+		position: relative; 
+		    top: 11px;
+            left: 11%;
+			width: 100px; 
+			height: 90px;
+			float:left;
+			-webkit-animation:fadeOut 2.0s infinite ease-in-out;
+		  animation:fadeOut 2.0s infinite ease-in-out; 
+		}
+		.heart:before, 
+		.heart:after { 
+			position: absolute; 
+			content: ""; 
+			left: 50px; 
+			top: 0; 
+			width: 50px; 
+			height: 80px; 
+			background: red; 
+			-moz-border-radius: 50px 50px 0 0;
+			-webkit-border-radius: 50px 50px 0 0;
+			 border-radius: 50px 50px 0 0; 
+			-webkit-transform: rotate(-45deg); 
+			-moz-transform: rotate(-45deg); 
+			-ms-transform: rotate(-45deg); 
+			-o-transform: rotate(-45deg); 
+			transform: rotate(-45deg); -
+			webkit-transform-origin: 0 100%; 
+			-moz-transform-origin: 0 100%; 
+			-ms-transform-origin: 0 100%; 
+			-o-transform-origin: 0 100%; 
+			transform-origin: 0 100%; 
+			} 
+			.heart:after { 
+				left: 0; 
+				-webkit-transform: rotate(45deg); 
+				-moz-transform: rotate(45deg); 
+				-ms-transform: rotate(45deg); 
+				-o-transform: rotate(45deg); 
+				transform: rotate(45deg); 
+				-webkit-transform-origin: 100% 100%; 
+				-moz-transform-origin: 100% 100%; 
+				-ms-transform-origin: 100% 100%; 
+				-o-transform-origin: 100% 100%; 
+				transform-origin :100% 100%; 
+			}
+			@-webkit-keyframes fadeOut{
+		  from {-webkit-transform:scale(0.0);}
+		  to {-webkit-transform:scale(1.0);opacity:0;}
+		}
+		@keyframes fadeOut{
+		  form{transform:scale(0.0);}
+		  to{transform:scale(1.0);opacity:0;}
+/* logo end */
+
+/* footer */
+#footer {margin: auto;width:50%;height:3rem;line-height:3rem;}
+
