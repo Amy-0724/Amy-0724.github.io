@@ -87,14 +87,15 @@ p {
 #label { position: relative;top: -1.5rem; left: 0;width: 78%;float: left;height: 3rem;border: 1px solid #f0b500;background-color: #FFCC00;}
 #label p {text-align: center;width: 8rem;height: 2rem;background-color: #FFE788;line-height: 2rem;font-size: 1rem; margin-top: 8px;    margin-left: 32%;border: 1px solid #f0b500;}
 
-#github-logo {margin-top: -32px;margin-right: 6px;width: 40px;height: 40px;float: right; background: url(../img/octocat-logo.png) no-repeat ;}
+#github-logo {margin-top: -32px;margin-right: 6px;width: 40px;height: 40px;float: right; background: url(images/octocat-logo.png) no-repeat ;}
 /* content  */
 #content {margin: auto; position: relative; top: 1rem;width: 50rem;height: auto;background: #fff;}
 /* part */
 .part {margin:2rem;width: 100%;height: 14rem;}
-.part h3 a {color:#A03333;font-size:0.5rem;padding-left:2rem;}
+.part h3 {width: 70%;}
 /* p-content  */
 .p-content {width: 90%; height: 10rem; background-color: #000;}
+.p-content0 {width: 90%; height: 10rem; background-color: #fff;}
 /* logo */
 .logo{margin:0.5rem auto;width:40%;animation:myfirst 5s;
 -moz-animation:myfirst 5s; /* Firefox */
@@ -316,8 +317,340 @@ to {width:40%;}
 		@keyframes fadeOut{
 		  form{transform:scale(0.0);}
 		  to{transform:scale(1.0);opacity:0;}
+		}
 /* logo end */
+/* dai swing */
+/*head-box*/
+.d-h-box{
+	width: 18.75em;
+	height: 12.5em;
+	margin: auto;
+	overflow: hidden;
+}
+/*head*/
+.head{
+	width: 12.5em;
+	height: 9.375em;	
+	-moz-border-radius:50%;
+	-o-border-radius: 50%;
+	-webkit-border-radius:50%;
+	box-shadow:  0em 0.75em 0.375em #888888,0.375em 1em 2.5em #ccc inset;
+	position: relative;
+	top:1.25em;
+	left:0.3125em;
+	z-index: 99;
+}
+/*ear*/
+.ear-l{
+	  box-shadow: -0.1875em -0.1875em 0.9375em #888383,1.25em 0.9375em 0.9375em #ccc inset;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  position: relative;
+  top: -8.9375em;
+  z-index: 50;
+  left: 0.75em;
+}
+.ear-r{
+box-shadow: 0.1875em -0.3125em 0.875em #888383,-0.9375em 1.375em 1.3125em #ccc inset;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  position: relative;
+  top: -11.25em;
+  left: 54%;
+  z-index: 50;
+}
+/*eyes left*/
+.eyes-l{  box-shadow: 0 0.125em 0.625em #888383;
+  width: 2.6875em;
+  height: 3.3125em;
+  border-radius: 50%;
+  position: relative;
+  top: -10.8125em;
+  left: 10%;
+  z-index: 100;
+  background-color: #575454;}
+.w-l-01{
+	  box-shadow: 0 0.125em 0.625em #888383;
+  width: 2em;
+  height: 2.6875em;
+  border-radius: 50%;
+  position: relative;
+  top: -13.8125em;
+  left: 2.1875em;
+  z-index: 101;
+  background-color: #fff;
+}
+.b-l-01{
+	box-shadow: 0 0.125em 0.625em #888383;
+  width: 1.75em;
+  height: 2.375em;
+  border-radius: 50%;
+  position: relative;
+  top: -16.3125em;
+  left: 2.3125em;
+  z-index: 102;
+  background-color: #575454;
+}
+.w-l-02 {
+display:block;
+	  box-shadow: 0 0.125em 0.625em #888383;
+  width: 0.625em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  top: -17.625em;
+  left: 2.6875em;
+  z-index: 120;
+  background-color: #fff;
+}
+.w-l-03 {
+display:block;
+	    box-shadow: 0 0.125em 0.625em #888383;
+  width: 0.625em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  top: -19.0625em;
+  left: 3.375em;
+  z-index: 120;
+  background-color: #fff;
+}
+/*eyes right*/
+.eyes-r{   box-shadow: 0 0.125em 0.625em #888383;
+  width: 2.6875em;
+  height: 3.3125em;
+  border-radius: 50%;
+  position: relative;
+  top: -21.125em;
+  left: 44%;
+  z-index: 100;
+  background-color: #575454;}
+.w-r-01{
+	box-shadow: 0 0.125em 0.625em #888383;
+  width: 2em;
+  height: 2.6875em;
+  border-radius: 50%;
+  position: relative;
+  top: -24.125em;
+  left: 8.625em;
+  z-index: 101;
+  background-color: #fff;
+}
+.b-r-01{
+  box-shadow: 0 0.125em 0.625em #888383;
+  width: 1.75em;
+  height: 2.375em;
+  border-radius: 50%;
+  position: relative;
+  top: -26.6875em;
+  left: 8.75em;
+  z-index: 102;
+  background-color: #575454;
+}
+.w-r-02 {
+display:block;
+	box-shadow: 0 0.125em 0.625em #888383;
+  width: 0.625em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  top: -27.75em;
+  left: 9.1875em;
+  z-index: 120;
+  background-color: #fff;
+}
+.w-r-03 {
+display:block;
+	     box-shadow: 0 0.125em 0.625em #888383;
+  width: 0.625em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  top: -29.3125em;
+  left: 9.8125em;
+  z-index: 120;
+  background-color: #fff;
+}
+.noise{
+	box-shadow: 0 0.125em 0.625em #888383;
+  width: 0.3125em;
+  height: 0.25em;
+  border-radius: 50%;
+  position: relative;
+  top: -27.625em;
+  left: 6.25em;
+  z-index: 102;
+  background-color: #000;
+}
+/*head swing*/
+.d-h-box{animation: myfirst 30s infinite;
+-moz-animation: myfirst 30s infinite;	/* Firefox */
+-webkit-animation: myfirst 30s infinite;	/* Safari 和 Chrome */
+}
+@keyframes myfirst
+{
+0% {transform:rotate(0deg);}
+25% {transform:rotate(6deg);}
+50%{transform:rotate(0deg);}
+75%{transform:rotate(-6deg);}
+100{transform:rotate(0deg);}
+}
 
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {transform:rotate(0deg);}
+25% {transform:rotate(6deg);}
+50%{transform:rotate(0deg);}
+75%{transform:rotate(-6deg);}
+100{transform:rotate(0deg);}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0% {transform:rotate(0deg);}
+25% {transform:rotate(10deg);}
+50%{transform:rotate(0deg);}
+75%{transform:rotate(-10deg);}
+100{transform:rotate(0deg);}
+}
+/* white eyes 02 swing */
+.w-l-02 {animation: white-l-02  3s infinite 2s;
+-moz-animation:  white-l-02 3s infinite 2s;	/* Firefox */
+-webkit-animation:  white-l-02 3s infinite 2s;	/* Safari 和 Chrome */}
+
+@keyframes white-l-02
+{
+0% {top:-17.625em;}
+10% {top:-17.8125em;}
+20%{top:-17.625em;}
+20%{top:-17.4375em;}
+40%{top:-17.625em;}
+
+}
+
+@-moz-keyframes white-l-02 /* Firefox */
+{
+0% {top:-17.625em;}
+10% {top:-17.8125em;}
+20%{top:-17.6875em;}
+20%{top:-17.5em;}
+40%{top:-17.625em;}
+
+}
+
+@-webkit-keyframes white-l-02 /* Safari 和 Chrome */
+{
+0% {top:-17.625em;}
+5% {top:-17.75em;}
+10%{top:-17.5625em;}
+15%{top:-17.375em;}
+20%{top:-17.625em;}
+
+}
+.w-r-02 {animation: white-r-02 3s infinite 2s;
+-moz-animation:  white-r-02 3s infinite 2s;	/* Firefox */
+-webkit-animation:  white-r-02 3s infinite 2s;	/* Safari 和 Chrome */}
+
+@keyframes white-r-02
+{
+0% {top:-27.75em;}
+10% {top:-27.9375em;}
+20%{top:-27.75em;}
+20%{top:-27.5625em;}
+40%{top:-27.75em;}
+
+}
+
+@-moz-keyframes white-r-02 /* Firefox */
+{
+0% {top:-27.75em;}
+10% {top:-28em;}
+20%{top:-27.8125em;}
+20%{top:-27.625em;}
+40%{top:-27.75em;}
+
+}
+
+@-webkit-keyframes white-r-02 /* Safari 和 Chrome */
+{
+0% {top:-27.75em;}
+5% {top:-27.875em;}
+10%{top:-27.6875em;}
+15%{top:-27.5em;}
+20%{top:-27.75em;}
+
+}
+/* white eyes 03 swing */
+.w-l-03 {animation: white-l-03 3s infinite 2s;
+-moz-animation:  white-l-03 3s infinite 2s;	/* Firefox */
+-webkit-animation:  white-l-03 3s infinite 2s;	/* Safari 和 Chrome */}
+
+@keyframes white-l-03
+{
+0% {top:-19.0625em;}
+10% {top:-19.25em;}
+20%{top:-19.0625em;}
+20%{top:-18.875em;}
+40%{top:-19.0625em;}
+
+}
+
+@-moz-keyframes white-l-03 /* Firefox */
+{
+0% {top:-19.0625em;}
+10% {top:-19.3125em;}
+20%{top:-19.125em;}
+20%{top:-18.9375em;}
+40%{top:-19.0625em;}
+
+}
+
+@-webkit-keyframes white-l-03 /* Safari 和 Chrome */
+{
+0% {top:-19.0625em;}
+5% {top:-19.1875em;}
+10%{top:-19em;}
+15%{top:-18.875em;}
+20%{top:-19.0625em;}
+
+}
+.w-r-03{animation: white-r-03 3s infinite 2s;
+-moz-animation:  white-r-03 3s infinite 2s;	/* Firefox */
+-webkit-animation:  white-r-03 3s infinite 2s;	/* Safari 和 Chrome */}
+
+@keyframes white-r-03
+{
+0% {top:-29.3125em;}
+10% {top:-29.125em;}
+20%{top:-29.3125em;}
+20%{top:-29.5em;}
+40%{top:-29.3125em;}
+
+}
+
+@-moz-keyframes white-r-03 /* Firefox */
+{
+0% {top:-29.3125em;}
+10% {top:-29.0625em;}
+20%{top:-29.25em;}
+20%{top:-29.4375em;}
+40%{top:-29.3125em;}
+
+}
+
+@-webkit-keyframes white-r-03 /* Safari 和 Chrome */
+{
+0% {top:-29.3125em;}
+5% {top:-29.125em;}
+10%{top:-29.25em;}
+15%{top:-29.5em;}
+20%{top:-29.3125em;}
+
+}
+/* dai swing end */
 /* footer */
-.footer {margin: auto;width:50%;height:3rem;line-height:3rem;}
+.footer {margin: auto;width:50rem;height:3rem;line-height:3rem;}
+
 
