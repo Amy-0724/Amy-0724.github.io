@@ -24,10 +24,10 @@
 	</div>
 	<!-- content -->
 	<div id="content">
-	<!-- part logo -->
+	<!-- part 01 -->
 	<div class="part">
 	<h3>这个是我的logo设计</h3>
-	<div class="p-content">
+	<div class="p-content black">
 	<!-- logo -->
 	<div class="logo">
 	 <div class="box-bd">
@@ -46,11 +46,12 @@
 	<!-- logo end -->
 	</div>
 	</div>
-	<!-- part end -->
-		<!-- part -->
+	<!-- part01 end -->
+	
+		<!-- part 02 -->
 	<div class="part">
 	<h3>晃动的小熊头部</h3>
-	<div class="p-content0">
+	<div class="p-content white">
 	<!-- dai swing -->
 	<div class="d-h-box">	
 	<div class="head"></div>
@@ -72,9 +73,53 @@
 	<!-- dai swing end -->
 	</div>
 	</div>
-	<!-- part end -->
+	<!-- part02 end -->
 	
+	<!-- part 03-->
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<div class="part">
+	<h3>这个是基于jquery的轮播图01</h3>
+	<div class="p-content white">
+	<!-- 轮播图 -->
+	<div class="Carousel_Figure" id="Carousel_Figure">
+    <ul class="front">
+        <li class="" data-val ="0"><img src="" alt="我是第一张图" ><p>我是第一张图的描述</p></li>
+        <li class="hidd" data-val ="1"><img src="" alt="我是第二张图" ><p>我是第二张图的描述</p></li>
+        <li class="hidd" data-val ="2"><img src="" alt="我是第三张图" ><p>我是第三张图的描述</p></li>
+        <li class="hidd" data-val ="3"><img src="" alt="我是第四张图" ><p>我是第四张图的描述</p></li>
+    </ul>
+    <a href="javascript:void(0);" class="Carousel_Figure-arrow prev"><</a>
+    <a href="javascript:void(0);" class="Carousel_Figure-arrow next">></a>
+</div>
+<script type="text/javascript">
+//点击按钮,触发切换图片事件
+
+$(".Carousel_Figure-arrow").click(updthisimg);
+//点击切换图片事件
+function updthisimg(){
+	var key = $("#Carousel_Figure ul li:not(.hidd)").attr("data-val");
+	if(3 == key ){		
+		$("#Carousel_Figure ul li").eq(key).addClass("hidd");
+		key= parseInt(key) + 1;
+		key = 0;		
+		$("#Carousel_Figure ul li").eq(key).removeClass("hidd");
+	}else{
+		$("#Carousel_Figure ul li").eq(key).addClass("hidd");
+		key= parseInt(key) + 1;
+	//console.log(key);
+		$("#Carousel_Figure ul li").eq(key).removeClass("hidd");	
+	}
+}
+//循环显示切换图片事件
+setInterval("updthisimg()",2000);
+
+</script>
+	<!-- 轮播图 -->
 	</div>
+	</div>
+	<!-- part03 end -->
+	</div>
+		
 	<!-- footer -->
 	<div class="footer">
 	<p>Author: amy ;  E-mail:<a href="mailto:EMAIL">amywork1024@gmail.com</a></p>
