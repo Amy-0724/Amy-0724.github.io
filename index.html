@@ -118,11 +118,53 @@ setInterval("updthisimg()",2000);
 	</div>
 	</div>
 	<!-- part03 end -->
+	
+	<!-- part 04-->
+	<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> 使用时请加上这一句 -->
+	<div class="part">
+	<h3>这个是基于jquery的轮播图02</h3>
+	<div class="p-content white">
+	<!-- 轮播图 02 -->
+	<div class="Carousel_Figure02" id="Carousel_Figure02">
+	<div class="behind02">
+    <ul class="front02">
+        <li class="" data-val ="0"><img src="" alt="我是第一张图" ><p>我是第一张图的描述</p></li>
+        <li class="hidd" data-val ="1"><img src="" alt="我是第二张图" ><p>我是第二张图的描述</p></li>
+        <li class="hidd" data-val ="2"><img src="" alt="我是第三张图" ><p>我是第三张图的描述</p></li>
+        <li class="hidd" data-val ="3"><img src="" alt="我是第四张图" ><p>我是第四张图的描述</p></li>
+    </ul>
+	
+	<div class="behind02">
+    <ul class="">
+        <li class="on" data-val ="0"><p>1</p></li>
+        <li class="" data-val ="1"><p>2</p></li>
+        <li class="" data-val ="2"><p>3</p></li>
+        <li class="" data-val ="3"><p>4</p></li>
+    </ul>
+	</div>
+</div>
+<script type="text/javascript">
+
+//点击切换图片事件
+$(".behind02 li").hover(function(){
+$(".behind02 li:not(this)").removeClass("on");
+$(this).addClass("on");
+var key = $(this).attr("data-val"); 
+$(".front02 li").addClass("hidd")
+$(".front02 li").eq(key).removeClass("hidd");
+});
+
+
+</script>
+	<!-- 轮播图 02 -->
+	</div>
+	</div>
+	<!-- part04 end -->
 	</div>
 		
 	<!-- footer -->
 	<div class="footer">
-	<p>Author: amy ;  E-mail:<a href="mailto:EMAIL">amywork1024@gmail.com</a></p>
+	<p>Author: Amy ;  E-mail:<a href="mailto:EMAIL">amywork1024@gmail.com</a></p>
 	</div>
 	
 	</body>

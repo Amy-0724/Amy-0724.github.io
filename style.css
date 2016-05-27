@@ -652,18 +652,29 @@ display:block;
 }
 /* dai swing end */
 /* Carousel_Figure */
-.Carousel_Figure {position: relative;}
-#Carousel_Figure {margin: auto;width: 25rem;}
-#Carousel_Figure ul {width: 100%;}
-#Carousel_Figure .front li {width: 100%;}
-#Carousel_Figure .front li img {width:100%;height:9rem;}
-#Carousel_Figure .front li p{position: relative;top: -5rem;left: 20%;}
-.front li:first-child  p {color:#8DA70A;}
-.front li:nth-child(2) p {color:#e20000;}
-.front li:nth-child(3) p {color:#DE2ECF;}
-.front li:nth-child(4) p {color:#322EDE;}
+.Carousel_Figure a {position: absolute;top: 3rem;width: 3rem;height: 3rem;line-height: 2.5rem;background-color: #ccc;font-size:4rem;color:#f5f5f5;text-decoration:none;}/* 第一个轮播图 */
+/* 第二个轮播图 */
+.behind li {position:relative;top:-3.1rem;left:0.15rem;display:inline-block;width:24.1%;height:2rem;line-height:2rem;text-align:center;
+background-color:#f5f5f5;color:#ccc;}
+/* .behind li :hover {background-color:#ccc;color:#f5f5f5;} */
+.on {background-color:#ccc!important;color:#f5f5f5!important;}
+/* 第二个轮播图结束 */
+.Carousel_Figure ,.Carousel_Figure02 {position: relative;}
+#Carousel_Figure ,#Carousel_Figure02{margin: auto;width: 25rem;}
+#Carousel_Figure ul ,#Carousel_Figure02 ul {width: 100%;}
+#Carousel_Figure .front li ,#Carousel_Figure02 .front02 li {width: 100%;}
+#Carousel_Figure .front li img ,#Carousel_Figure02 .front02 li img{width:100%;height:9rem;}
+#Carousel_Figure .front li p ,
+#Carousel_Figure02 .front02 li p {position: relative;top: -1.4rem;width: 100%;
+    height: 1.4rem;text-align:center;
+    background-color: #000;
+    opacity: 0.8;}
+.front li:first-child  p ,.front02 li:first-child  p {color:#8DA70A;}
+.front li:nth-child(2) p ,.front02 li:nth-child(2) p {color:#e20000;}
+.front li:nth-child(3) p ,.front02 li:nth-child(3) p {color:#DE2ECF;}
+.front li:nth-child(4) p ,.front02 li:nth-child(4) p {color:#322EDE;}
+.behind02 li {float:left;    width: 25%;text-align: center;}
 .hidd {display: none;}
-.Carousel_Figure a {position: absolute;top: 3rem;width: 3rem;height: 3rem;line-height: 2.5rem;background-color: #ccc;font-size:4rem;color:#f5f5f5;text-decoration:none;}
 .prev {left: 0px;}
 .next {right: 0px;}
 .next img {padding-left: 30px;}
