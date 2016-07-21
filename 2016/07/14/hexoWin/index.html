@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Hexo博客win搭建教程 | Amy&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="准备:你需要准备好这些软件： Node.js、 Git、Windows
+1.配置Node.js环境 下载Node.js安装文件：Windows Installer 32-bitWindows Installer 64-bit根据自己的Windows版本选择相应的安装文件，要是不知道，就win+pauseBreak查看系统类型.保持默认设置即可，一路Next，按下Win+R，输入cmd，输入
+12n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客win搭建教程">
+<meta property="og:url" content="http://blog.bblovedd.com/2016/07/14/hexoWin/index.html">
+<meta property="og:site_name" content="Amy's blog">
+<meta property="og:description" content="准备:你需要准备好这些软件： Node.js、 Git、Windows
+1.配置Node.js环境 下载Node.js安装文件：Windows Installer 32-bitWindows Installer 64-bit根据自己的Windows版本选择相应的安装文件，要是不知道，就win+pauseBreak查看系统类型.保持默认设置即可，一路Next，按下Win+R，输入cmd，输入
+12n">
+<meta property="og:updated_time" content="2016-07-18T06:39:16.496Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo博客win搭建教程">
+<meta name="twitter:description" content="准备:你需要准备好这些软件： Node.js、 Git、Windows
+1.配置Node.js环境 下载Node.js安装文件：Windows Installer 32-bitWindows Installer 64-bit根据自己的Windows版本选择相应的安装文件，要是不知道，就win+pauseBreak查看系统类型.保持默认设置即可，一路Next，按下Win+R，输入cmd，输入
+12n">
+  
+    <link rel="alternative" href="/atom.xml" title="Amy&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Amy</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Amy</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="null" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Amy</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-hexoWin" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/14/hexoWin/" class="article-date">
+  	<time datetime="2016-07-14T01:27:20.513Z" itemprop="datePublished">2016-07-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo博客win搭建教程
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry xianshi" itemprop="articleBody">
+      
+        <h3 id="准备"><a href="#准备" class="headerlink" title="准备:"></a>准备:</h3><h3 id="你需要准备好这些软件："><a href="#你需要准备好这些软件：" class="headerlink" title="你需要准备好这些软件："></a>你需要准备好这些软件：</h3><p> Node.js、 Git、Windows</p>
+<h4 id="1-配置Node-js环境"><a href="#1-配置Node-js环境" class="headerlink" title="1.配置Node.js环境"></a>1.配置Node.js环境</h4><p> 下载Node.js安装文件：<br><a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi" target="_blank" rel="external">Windows Installer 32-bit</a><br><a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi" target="_blank" rel="external">Windows Installer 64-bit</a><br>根据自己的Windows版本选择相应的安装文件，要是不知道，就win+pauseBreak查看系统类型.保持默认设置即可，一路Next，按下Win+R，输入cmd，输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">npm -v</div></pre></td></tr></table></figure>
+<p>显示版本说明正确.</p>
+<h4 id="2-配置Git环境"><a href="#2-配置Git环境" class="headerlink" title="2.配置Git环境"></a>2.配置Git环境</h4><p>下载Git安装文件：<br><a href="https://git-scm.com/download/win" target="_blank" rel="external">Git.exe</a></p>
+<p>配置环境是选择第二个</p>
+<p>检查Git安装输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git --version</div></pre></td></tr></table></figure>
+<p>显示版本说明正确</p>
+<h4 id="3-配置Github"><a href="#3-配置Github" class="headerlink" title="3.配置Github"></a>3.配置Github</h4><p>注册账号<br>如果已经拥有账号，请跳过此步~</p>
+<p>打开<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>，在下图的框中，分别输入自己的用户名，邮箱，密码。</p>
+<p>然后前往自己刚才填写的邮箱，点开Github发送给你的注册确认信，确认注册，结束注册流程。</p>
+<p>一定要确认注册，否则无法使用gh-pages！</p>
+<p>创建代码库<br>登陆之后，点击页面右上角的加号，选择New repository：</p>
+<p>进入代码库创建页面：</p>
+<p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：</p>
+<p>正确创建之后，你将会看到如下界面：</p>
+<p>开启gh-pages功能<br>点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，</p>
+<p>点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。</p>
+<p>如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了~</p>
+<p>如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。</p>
+<h4 id="4-配置Hexo"><a href="#4-配置Hexo" class="headerlink" title="4.配置Hexo"></a>4.配置Hexo</h4><p>安装Hexo<br>在自己认为合适的地方创建一个文件夹，然后在文件夹空白处按住Shift+鼠标右键，然后点击在此处打开命令行窗口。（同样要记住啦，下文中会使用在当前目录打开命令行来代指上述的操作）</p>
+<p>在命令行中输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p>然后你将会看到:</p>
+<p>可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。</p>
+<p>然后输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo --save</div></pre></td></tr></table></figure>
+<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。</p>
+<p>在命令行中输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
+<p>查看版本信息</p>
+<p>初始化Hexo<br>接着上面的操作，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<p>然后输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。</p>
+<p>首次体验Hexo<br>继续操作，同样是在命令行中，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<p>你会看到与<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Usage:hexo &lt;<span class="built_in">command</span>&gt;</div></pre></td></tr></table></figure></p>
+<p>Commend的信息和Global Options的信息</p>
+<p>然后输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>然后会提示：</p>
+<p>INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>在浏览器中打开<a href="http://localhost:4000/，你将会看到hexo配置的页面" target="_blank" rel="external">http://localhost:4000/，你将会看到hexo配置的页面</a>.</p>
+<p>到目前为止，Hexo在本地的配置已经全都结束了.</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/12/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS3 的运用</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="hexoWin" data-title="Hexo博客win搭建教程" data-url="http://blog.bblovedd.com/2016/07/14/hexoWin/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Amy
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
