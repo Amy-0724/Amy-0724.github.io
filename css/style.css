@@ -194,6 +194,10 @@ a {
     width: 100%;
   }
 }
+.xianshi {
+  height: 190px;
+  overflow: hidden;
+}
 #container {
   position: relative;
   min-height: 100%;
@@ -964,6 +968,10 @@ a {
   border: none;
   margin: -30px 0 20px 30px;
 }
+.xianshi {
+  height: 190px;
+  overflow: hidden;
+}
 .article-entry {
   line-height: 1.8em;
   padding-right: 30px;
@@ -1191,6 +1199,17 @@ a {
 }
 #article-nav #article-nav-older {
   float: right;
+}
+.showon {
+  display: inline-block;
+  background-color: #fff;
+  color: #1c99d2;
+  position: relative;
+  left: 8em;
+  top: -3.8em;
+  width: 100px;
+  min-height: 30px;
+  text-align: center;
 }
 @-moz-keyframes cd-bounce-1 {
   0% {
@@ -1535,7 +1554,7 @@ a {
 }
 .article-entry .highlight .line {
   font-size: 15px;
-  height: 15px;
+  height: 30px;
 }
 .article-entry .gist {
   margin: 0 -20px;
