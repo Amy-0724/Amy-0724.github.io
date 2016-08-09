@@ -1200,17 +1200,6 @@ a {
 #article-nav #article-nav-older {
   float: right;
 }
-.showon {
-  display: inline-block;
-  background-color: #fff;
-  color: #1c99d2;
-  position: relative;
-  left: 8em;
-  top: -3.8em;
-  width: 100px;
-  min-height: 30px;
-  text-align: center;
-}
 @-moz-keyframes cd-bounce-1 {
   0% {
     opacity: 0;
@@ -2310,4 +2299,15 @@ pre .css ~ * .id {
   padding: 0;
   height: 100%;
   overflow: hidden;
+}
+.showon {
+  display: inline-block;
+  background-color: #fff;
+  color: #1c99d2;
+  position: relative;
+  left: 10em;
+  top: -3.8em;
+  width: 100px;
+  min-height: 30px;
+  text-align: center;
 }

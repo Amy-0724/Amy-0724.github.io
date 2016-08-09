@@ -198,6 +198,219 @@
 
       <div class="body-wrap">
   
+    <article id="post-ps02" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/03/ps02/" class="article-date">
+  	<time datetime="2016-08-03T08:35:17.830Z" itemprop="datePublished">2016-08-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/03/ps02/">PS切图技巧--cc2015</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry xianshi" itemprop="articleBody">
+      
+        <p>上次说的是PS_cc_2014之前的版本(不包括此版本).至于此之后的版本现在解说.</p>
+<p>###自动切图（含WebP、SVG格式）:</p>
+<p>前端开发人员经常需要将很多图层切出成独立的图片。有了自动切图功能，无需花更多时间来切图了。只需在图层名后添加相应格式后缀（如.png)，即可自动输出所需格式的图片。</p>
+<p>请保持菜单“编辑-&gt;首选项-&gt;增效工具”中的“生成器”为启用状态；<br>依次点击菜单“文件-&gt;生成-&gt;图像资源”，确认该菜单项已被勾选；</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080801.png" width="50" height="50"></p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080802.png" width="50" height="50"></p>
+<p>试着修改某个图层命名(如 iTunes.png)，然后检查当前 psd 文件所在目录下的“文件名-assets” 的目录，打开此目录，发现 iTunes.png 已经躺在里面了。</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080803.png" width="50" height="50"></p>
+<p>#####常用技巧：</p>
+<p>1.<img src="http://blog.bblovedd.com/old/img/ps2016080804.png" width="50" height="50"><br>2.@2x Retina 图片的输出，在图层前添加 200% 即可，如 200% logo@2x.png ;<br>开启 WebP、SVG 格式的自动输出： 新建 generator.json 文件，内容如下：<br>{<br>  “generator-assets”:  {<br>    “svg-enabled”: true,<br>    “webp-enabled”: true<br>  }<br>}<br>将此配置文件拷贝至： Windows: (Win+R后输入 %USERPROFILE% )目录下，如 C:\Users\xxx Mac OS: $HOME 如“Macintosh HD&gt;Users&gt;xxx” 目录下 WebP 输出暂只支持 Mac OS。</p>
+<p>###复制 CSS</p>
+<p>Photoshop CC 终于推出了“复制CSS” 功能。它能让开发人员快速获取形状的 CSS 代码。其实不少设计师也很想学习 CSS，有了这个功能，可以让这些爱学习的设计师熟悉 CSS 代码与图形的对应关系；</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080805.png" width="50" height="50"></p>
+<p>右击图层面板上的图层，选择“复制 CSS”，或点击菜单“图层-&gt;复制 CSS”；<br>多个图层的批量获取，请选择多个图层，执行 Ctrl+G，将所选图层转为图层组。然后在该组上右击，选择“复制 CSS”，即可批量获取 CSS 代码。<br>智能对象暂不支持“复制 CSS”功能，您可以栅格化该图层再来使用。<br>当前的版本的此功能，包含了很多冗余信息和不太友好的写法，可能不是大家真正需要的。于是 ISUX 前端团队改进了这个功能，您可以下载“PhotoshopCopyCSS”来增强 Photoshop CC 自带的“复制 CSS”功能，提升 CSS 代码的真正采用率；目前的优化有：</p>
+<ul>
+<li>自动识别 CSS Sprite 图片，获取 background-position 信息；</li>
+<li>自动识别是否图标；</li>
+<li>优化 CSS3 渐变、文字、边框、阴影等 CSS 代码；</li>
+<li>优化 RGB 颜色值成 十六进制颜色；</li>
+<li>去除冗余 CSS 属性，如 position, z-index, left, top 等。</li>
+</ul>
+<p>您也可以反馈更好的建议，让这个功能真正为大家所用。</p>
+<p>###图层管理</p>
+<p>前端开发同学接手的 psd 文档，往往有大量图层，我们需要对其进行整理。例如删除空白、锁定、文本等图层。我们还可以通过图层类型、名称、效果、属性等条件进行快速定位图层。</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080806.png" width="50" height="50"><br><img src="http://blog.bblovedd.com/old/img/ps2016080807.png" width="50" height="50"><br><img src="http://blog.bblovedd.com/old/img/ps2016080808.png" width="50" height="50"><br><img src="http://blog.bblovedd.com/old/img/ps2016080809.png" width="50" height="50"></p>
+<p>使用此功能可以很方便定位到当前选定图层，非常适合含有大量图层的 psd 文档。</p>
+<p>另外隔离图层也是个很不错的功能。开启隔离图层功能之后，我们可以通过移动选择工具，点选画布上的内容，找出我们需要的图层将其整理成一个独立的 psd 文件。</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080810.png" width="50" height="50"></p>
+<p>###WebP 插件</p>
+<p>WebP 是 Google 为减少数据量、加速网络传输的目的而开发的图片格式。特别适合移动端图片的传输。大大节省带宽，目前只有 Google Chrome 浏览器对其原生支持。</p>
+<p>Photoshop CC 的 Mac OS 版自带输出 WebP 功能。Windows 下您可以下载此插件来输出 WebP 格式。安装后，可以在 Photoshop 菜单“文件-&gt;另存为” 对话框中选择“WebP格式图片”。</p>
+<p>WebP for Photoshop v0.5b5, 16 December 2013 <a href="http://www.fnordware.com/downloads/WebP_v0.5b5_mac.zip" target="_blank" rel="external">Mac</a> | <a href="http://www.fnordware.com/downloads/WebP_v0.5b5_win.zip" target="_blank" rel="external">Win</a></p>
+<p>###动作条件</p>
+<p>Photoshop CC 新增了动作条件，可以根据不同条件执行命令或其他动作。</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080901.png" width="50" height="50"></p>
+<p>###智能参考线/使用图层颜色</p>
+<p>这两个功能并不是 Photoshop CC 的新功能。为什么要在这里说呢，因为它能辅助我们一秒居中对齐、一秒贴边，这个非常实用。另外也建议设计师使用图层颜色来标出改动位置，这样前端开发同学便能快速定位图层。</p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080902.png" width="50" height="50"></p>
+<p><img src="http://blog.bblovedd.com/old/img/ps2016080903.png" width="50" height="50"></p>
+<p>参考资料：</p>
+<p><a href="https://zh.wikipedia.org/wiki/WebP" target="_blank" rel="external">WebP</a><br><a href="https://helpx.adobe.com/photoshop/using/whats-new.html" target="_blank" rel="external">What’s New in Photoshop CC</a><br><a href="http://blogs.adobe.com/photoshop/2013/09/introducing-adobe-generator-for-photoshop-cc.html" target="_blank" rel="external">Introducing Adobe Generator for Photoshop CC</a><br><a href="https://isux.tencent.com/ps-photoshop-cc-fd.html" target="_blank" rel="external">Photoshop CC 与前端那些事</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+<div class="showon" id="showon" onclick="showon">
+>>显示内容
+</div>
+
+
+
+
+
+
+
+ 
+  
+    <article id="post-ps01" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/03/ps01/" class="article-date">
+  	<time datetime="2016-08-03T07:47:52.717Z" itemprop="datePublished">2016-08-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/03/ps01/">PS切图技巧</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry xianshi" itemprop="articleBody">
+      
+        <p>做前端的必然会和ps打交道,介绍一款我常用的软件cutterman.2.3.0.zxp</p>
+<p>只需要安装之后,打开ps,选中你需要的图层,导出选中图层就好了–!就是这么简单</p>
+<p>备注:如果你用的是PS_cc_2014之前的版本(不包括此版本),用这个比较方便.至于此之后的版本有更合适的方法,见下篇PS切图技巧–cc2015</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+<div class="showon" id="showon" onclick="showon">
+>>显示内容
+</div>
+
+
+
+
+
+
+
+ 
+  
+    <article id="post-ajax" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/29/ajax/" class="article-date">
+  	<time datetime="2016-07-29T01:33:23.523Z" itemprop="datePublished">2016-07-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/29/ajax/">ajax 的简单运用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry xianshi" itemprop="articleBody">
+      
+        <p>和后台交互的时候经常会用到ajax,小白苦豪,臣妾做不到啊!实际是会则不难.<br>下面来说一下ajax的简单运用.</p>
+<p>假如我们需要和后台进行交互的有name,password我们该如何操作呢</p>
+<h3 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">&lt;form action=<span class="string">"/yygh/yygh.php"</span> id=<span class="string">"gh_form"</span> onsubmit=<span class="string">"return addcheck()"</span> method=<span class="string">"post"</span>&gt;</div><div class="line">		&lt;table width=<span class="string">"100%"</span> border=<span class="string">"0"</span> cellspacing=<span class="string">"0"</span> cellpadding=<span class="string">"0"</span>&gt;</div><div class="line">		&lt;tbody&gt;</div><div class="line">		&lt;tr&gt;</div><div class="line">			&lt;td height=<span class="string">"15"</span>&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">		&lt;/tr&gt;</div><div class="line">		&lt;tr&gt;</div><div class="line">			&lt;td align=<span class="string">"left"</span> valign=<span class="string">"middle"</span> height=<span class="string">"21"</span> width=<span class="string">"80"</span>&gt;</div><div class="line">				&lt;b&gt;&lt;font class=<span class="string">"red"</span>&gt;*&lt;/font&gt;用户名：&lt;/b&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">			&lt;td align=<span class="string">"left"</span> valign=<span class="string">"middle"</span> height=<span class="string">"21"</span> width=<span class="string">"192"</span>&gt;</div><div class="line">				&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> class=<span class="string">"txt2"</span> name=<span class="string">"name"</span> id=<span class="string">"name"</span> value=<span class="string">" 输入您的用户名"</span> onblur=<span class="string">"this.value=&amp;quot;&amp;quot;==this.value?&amp;quot; 输入您的用户名&amp;quot;:this.value"</span> onfocus=<span class="string">"this.value=&amp;quot; 输入您的用户名&amp;quot;==this.value?&amp;quot;&amp;quot;:this.value=ignoreSpaces(this.value)"</span> required=<span class="string">""</span>&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">		&lt;/tr&gt;</div><div class="line">		&lt;tr&gt;</div><div class="line">			&lt;td height=<span class="string">"15"</span>&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">		&lt;/tr&gt;</div><div class="line">		&lt;tr&gt;</div><div class="line">			&lt;td align=<span class="string">"left"</span> valign=<span class="string">"middle"</span> height=<span class="string">"21"</span> width=<span class="string">"80"</span>&gt;</div><div class="line">				&lt;b&gt;&lt;font class=<span class="string">"red"</span>&gt;*&lt;/font&gt;密码:&lt;/b&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">			&lt;td align=<span class="string">"left"</span> valign=<span class="string">"middle"</span> height=<span class="string">"21"</span> width=<span class="string">"192"</span>&gt;</div><div class="line">				&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> class=<span class="string">"txt2"</span> name=<span class="string">"password"</span> id=<span class="string">"password"</span> value=<span class="string">" 输入您的密码"</span> onblur=<span class="string">"this.value=&amp;quot;&amp;quot;==this.value?&amp;quot; 输入您的密码&amp;quot;:this.value=ignoreSpaces(this.value)"</span> onfocus=<span class="string">"this.value=&amp;quot; 输入您的密码&amp;quot;==this.value?&amp;quot;&amp;quot;:this.value"</span>&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">		&lt;/tr&gt;	</div><div class="line">		&lt;tr&gt;</div><div class="line">			&lt;td height=<span class="string">"15"</span>&gt;</div><div class="line">			&lt;/td&gt;</div><div class="line">		&lt;/tr&gt;	</div><div class="line">		&lt;tr&gt;</div><div class="line">			&lt;td colspan=<span class="string">"2"</span> align=<span class="string">"center"</span> valign=<span class="string">"middle"</span> height=<span class="string">"27"</span> width=<span class="string">"320px"</span>&gt;</div><div class="line">				&lt;input style=<span class="string">"border:0;height:30px;line-height:20px;padding-top:0;margin:0 5px"</span> name=<span class="string">" "</span> <span class="built_in">type</span>=<span class="string">"bottom"</span> onclick=<span class="string">"add();"</span> class=<span class="string">"h-zj h-zj-upd"</span> id=<span class="string">""</span> value=<span class="string">"登录"</span>&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;input style=<span class="string">"margin:0 10px"</span> class=<span class="string">"h-zj cheng h-zj-upd"</span>  <span class="built_in">type</span>=<span class="string">"reset"</span> value=<span class="string">"重置"</span>&gt;</div><div class="line">				</div><div class="line">			&lt;/td&gt;</div><div class="line">		&lt;/tr&gt;</div><div class="line">		&lt;/tbody&gt;</div><div class="line">		&lt;/table&gt;</div><div class="line">	&lt;/form&gt;</div></pre></td></tr></table></figure>
+<h3 id="…-yygh-yygh-php创建这个文件"><a href="#…-yygh-yygh-php创建这个文件" class="headerlink" title="…/yygh/yygh.php创建这个文件"></a>…/yygh/yygh.php创建这个文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">未完,待补充</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+<div class="showon" id="showon" onclick="showon">
+>>显示内容
+</div>
+
+
+
+
+
+
+
+ 
+  
     <article id="post-css3 use 2" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -254,8 +467,7 @@
 
 
 
-
-
+ 
   
     <article id="post-css3 use 1" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -313,8 +525,7 @@
 
 
 
-
-
+ 
   
     <article id="post-hexooffen" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -378,8 +589,7 @@
 
 
 
-
-
+ 
   
     <article id="post-hexoWindows" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -484,8 +694,7 @@
 
 
 
-
-
+ 
   
     <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -551,8 +760,7 @@
 
 
 
-
-
+ 
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -616,8 +824,7 @@
 
 
 
-
-
+ 
   
   
 </div>
