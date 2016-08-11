@@ -111,14 +111,7 @@ require([], function (){
 
 
 //点击showon显示全部文章
- // $(".showon").on("click",function(){	 
-	 // $(".article-entry").removeClass("xianshi");
-		 // $(this).text(">>收起");		  
- // })
-// $(".showon").on("click",function(){	 
-	 // $(".article-entry").addClass("xianshi");
-		 // $(this).text(">>显示");		  
- // })
+
 $(".showon").on("click",function(){	 
 
 	  $(this).prev().find(".article-entry").toggleClass("xianshi");	 
