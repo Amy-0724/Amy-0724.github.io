@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name='viewport' content='width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'>
+		<title>面试题目</title>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<style type="text/css">
+			@charset "utf-8";
+body {max-width:640px; margin:0px auto;background-color: #fcfcfc;}
+nav {  text-align: center;    border-bottom: 1px solid #d9cd85;}
+nav .glyphicon {line-height: 5rem;}
+nav h3 {font-weight: 600; color: #525863;    width: 95%;  float: left;}
+section .ModuleA {    width: 90%;margin-top: 1rem;border-radius: 1rem;position: relative; left: 2.4%;z-index: 5;    background-color: #fff;}
+.ModuleA_up p {    color: #b2bbd3;}
+.ModuleA_up span {float: right; display: block; color: #d7787e; border-radius: 1rem; border: 1px solid; width: 4rem; height: 2rem; line-height: 2rem;  text-align: center;}
+section .ModuleA a {text-decoration:none;}
+section .ModuleA a span {position: relative;  z-index: 7;left: 90%; top: 1.8rem;}
+section .ModuleB {width: 90%; border-radius: 1rem;    position: relative;
+ top: -2.2rem; left: 5%; z-index: 3;    background-color: #fff;}
+section .ModuleB_up {padding-top: 1rem;}
+section .ModuleB_up p:first-child {    display: block;    float: left;    width: 4rem;    height: 4rem;    border-radius: 4rem;-moz-border-radius: 4rem;    line-height: 4rem;
+    text-align: center;border: 1px solid #ccc; background: url() no-repeat #D9CD85;background-size:100% ;margin-right: 1rem;}
+section .ModuleB_up p:nth-child(3) {color: #bfc7da;}
+section .ModuleB_down ul {border-bottom: 1px dashed #BFC7DA;height: 9rem;padding-left: 0;    margin-top: 2rem;}
+section .ModuleB_down ul li {float: left;width: 22%;margin-left: 2.6%;list-style:none;}
+section .ModuleB_down ul li img {width: 100%;height: 7rem;}
+.triangle_l {position: relative;}
+.triangle_l .triangle-character {position: absolute;
+    top: -2rem;
+    overflow: hidden;
+    width: 26px;
+    height: 26px;
+    font: normal 26px "宋体";}
+.triangle_l .tc-border {    left: -1.9rem;
+    color: #e3e3e3;}
+.triangle_l .tc-background {left: -2rem;
+    color: #FFFFFF;}
+
+.triangle_r {position: relative;}
+.triangle_r .triangle-character {position: absolute;
+    top: -2rem;
+    overflow: hidden;
+    width: 26px;
+    height: 26px;
+    font: normal 26px "宋体";}
+.triangle_r .tc-border {    right: -1.9rem;
+    color: #e3e3e3;}
+.triangle_r .tc-background {right: -2rem;
+    color: #FFFFFF;}
+footer {width: 100%;margin: 0 auto; position: fixed;    bottom: 0;    left: 0;z-index: 100;
+border-top: 1px solid #ccc;padding-top: 1rem;    background-color: #fff;}
+footer .footer_row {width: 94%;margin: auto;}
+footer .footer_row .footer_sm {border: 1px solid #fff;}
+footer .footer_row .footer_sm {width: 19%;float: left;}
+footer .footer_row .footer_bg {width: 24%;float: left;}
+footer .footer_row ul {padding: 0;}
+footer .footer_row ul li {list-style: none;color: #a9a7a7;}
+footer .footer_row ul li p {text-align: center;text-decoration:none;}
+footer .footer_row ul li p span {display: block;text-align: center;} 
+#f_red {color: #D7787E;}
+.f_red {color: #D7787E!important;}
+.hidd {display: none;}
+
+		</style>
+		<!-- nav 导航条  -->
+		<nav>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>HOW的人正在问</h3>
+						<span class="glyphicon glyphicon-question-sign"></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+			
+		<!-- Module 问答 -->
+		<div id="qa" data-val = "0" class="Module">
+			<!-- Module 问答 -->
+		<section>
+			<div class="well well-sm ModuleA">
+				<div class="ModuleA_up">
+					<p>高雄王伯伯 <span>同感</span></p>
+				</div>
+				<div class="ModuleA_down">
+					<p>高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯</p>
+				</div>
+				<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+			</div>
+			
+			<div class="well well-sm ModuleB">
+				<div class="ModuleB_up">
+					<p>图片</p>
+					<p>高雄王伯伯 </p>
+					<p>高雄王伯伯高雄王伯伯</p>
+					 	
+				</div>
+				<div class="ModuleB_down">
+					<p>高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯</p>
+					<ul>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+					</ul>
+					
+				</div>
+				<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+  <div class="triangle-character tc-background">◆</div></div>
+				<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+  <div class="triangle-character tc-background">◆</div></div>
+			
+			</div>
+
+		</section>
+		<!-- Module 问答 -->
+		<section>
+			<div class="well well-sm ModuleA">
+				<div class="ModuleA_up">
+					<p>高雄王伯伯 <span>同感</span></p>
+				</div>
+				<div class="ModuleA_down">
+					<p>高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯</p>
+				</div>
+				<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+			</div>
+			
+			<div class="well well-sm ModuleB">
+				<div class="ModuleB_up">
+					<p>图片</p>
+					<p>高雄王伯伯 </p>
+					<p>高雄王伯伯高雄王伯伯</p>
+					 	
+				</div>
+				<div class="ModuleB_down">
+					<p>高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯</p>
+					<ul>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+					</ul>
+					
+				</div>
+				<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+  <div class="triangle-character tc-background">◆</div></div>
+				<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+  <div class="triangle-character tc-background">◆</div></div>
+			
+			</div>
+
+		</section>
+		<!-- Module 问答 -->
+		<section>
+			<div class="well well-sm ModuleA">
+				<div class="ModuleA_up">
+					<p>高雄王伯伯 <span>同感</span></p>
+				</div>
+				<div class="ModuleA_down">
+					<p>高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯</p>
+				</div>
+				<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+			</div>
+			
+			<div class="well well-sm ModuleB">
+				<div class="ModuleB_up">
+					<p>图片</p>
+					<p>高雄王伯伯 </p>
+					<p>高雄王伯伯高雄王伯伯</p>
+					 	
+				</div>
+				<div class="ModuleB_down">
+					<p>高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯高雄王伯伯</p>
+					<ul>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+					</ul>
+					
+				</div>
+				<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+  <div class="triangle-character tc-background">◆</div></div>
+				<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+  <div class="triangle-character tc-background">◆</div></div>
+			
+			</div>
+
+		</section>
+
+		</div>
+	
+		<!-- Module they -->
+		<div id="they"  data-val = "1" class="hidd Module">
+					<!-- Module they -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>theytheythey <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>同感同感同感同感同感同</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module they -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>theytheythey <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>同感同感同感同感同感同</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module they -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>theytheythey <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>同感同感同感同感同感同</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感同感</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				
+				</div>
+			
+			<!-- Module plus -->
+		<div id="plus"  data-val = "2" class="hidd Module">
+					<!-- Module plus -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>加好 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>加好加好加好加好</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module plus -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>加好 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>加好加好加好加好</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module plus -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>加好 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>加好加好加好加好</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好加好</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				
+				</div>
+				
+		<!-- Module answer -->
+		<div id="answer"  data-val = "3" class="hidd Module">
+					<!-- Module answer -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>答案 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>答案答案答案答案答案答案答案答案答案答案答案答案</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>答案答案答案</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module answer -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>答案 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>答案答案答案</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module answer -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>答案 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>同感</p>
+							<p>高雄王伯伯 </p>
+							<p>答案答案答案</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案答案</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				
+				</div>
+			
+			<!-- Module mine -->
+		<div id="mine"  data-val = "4" class="hidd Module">
+					<!-- Module mine -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>我的 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>我的</p>
+							<p>高雄王伯伯 </p>
+							<p>我的</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module mine -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>我的 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>我的</p>
+							<p>高雄王伯伯 </p>
+							<p>我的我的</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				<!-- Module mine -->
+				<section>
+					<div class="well well-sm ModuleA">
+						<div class="ModuleA_up">
+							<p>我的 <span>同感</span></p>
+						</div>
+						<div class="ModuleA_down">
+							<p>我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的</p>
+						</div>
+						<a href="#"><span class="glyphicon glyphicon-new-window"></span></a>
+					</div>
+					
+					<div class="well well-sm ModuleB">
+						<div class="ModuleB_up">
+							<p>我的</p>
+							<p>高雄王伯伯 </p>
+							<p>我的我的我的我的</p>
+							 	
+						</div>
+						<div class="ModuleB_down">
+							<p>我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的我的</p>
+							<ul>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+								<li><img src=""/></li>
+							</ul>
+							
+						</div>
+						<div class="triangle_l">  <div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+						<div class="triangle_r"><div class="triangle-character tc-border">◆</div>
+		  <div class="triangle-character tc-background">◆</div></div>
+					
+					</div>
+		
+				</section>
+				
+				</div>
+			
+	
+		<footer>
+					<div class="footer_row">
+						<ul>
+							<li data-val = "0" class="f_red"><p class="footer_sm footer_aq"><span class="glyphicon glyphicon-home"></span> 问答</p></li>
+							<li data-val = "1"  class=""><p class="footer_sm footer_they"><span class="glyphicon glyphicon-star-empty"></span> 他们</p></li>
+							<li data-val = "2"  class="" id="f_red"><p class="footer_sm footer_plus "><span class="glyphicon glyphicon-plus-sign" style="line-height: 2rem;"></span></p></li>
+							<li data-val = "3"  class=""><p class="footer_bg footer_answer"><span class="glyphicon glyphicon-thumbs-up"></span> 收到的答案</p></li>
+							<li data-val = "4"  class=""><p class="footer_sm footer_mine"><span class="glyphicon glyphicon-user"></span> 我的</p></li>
+						</ul>
+					</div>
+				</footer>
+				
+		<script type="text/javascript">
+			 $(".footer_row ul li ").click(function(){                                      
+                        var key = $(this).attr("data-val");
+                        $(".footer_row ul li").removeClass("f_red");
+                        $(this).addClass("f_red");
+                        $(".Module").addClass("hidd");
+                        $(".Module").eq(key).removeClass("hidd");
+                        
+                  })
+
+		</script>	
+	</body>
+</html>
