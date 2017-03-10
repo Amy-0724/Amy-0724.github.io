@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.bblovedd.com">
-  <title>Tag: css | Amy0724&#39;s blog</title>
+  <title>文本溢出显示省略号 | Amy0724&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="懒癌犯了，也得吃饭">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Amy0724's blog">
-<meta property="og:url" content="http://www.bblovedd.com/tags/css/index.html">
+  <meta name="description" content="查看效果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文本溢出显示省略号">
+<meta property="og:url" content="http://www.bblovedd.com/2017/03/10/Text-overflow-ellipsis/index.html">
 <meta property="og:site_name" content="Amy0724's blog">
-<meta property="og:description" content="懒癌犯了，也得吃饭">
+<meta property="og:description" content="查看效果">
+<meta property="og:updated_time" content="2017-03-10T08:50:26.760Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Amy0724's blog">
-<meta name="twitter:description" content="懒癌犯了，也得吃饭">
+<meta name="twitter:title" content="文本溢出显示省略号">
+<meta name="twitter:description" content="查看效果">
   
     <link rel="alternative" href="/atom.xml" title="Amy0724&#39;s blog" type="application/atom+xml">
   
@@ -156,64 +157,163 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Text-overflow-ellipsis" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/10/highly-adaptive/" class="archive-article-date">
-  	<time datetime="2017-03-10T09:22:18.210Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/10/highly-adaptive/">滚动条到底部了</a>
+    <h1 class="article-title" itemprop="name">
+      文本溢出显示省略号
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/10/Text-overflow-ellipsis/" class="archive-article-date">
+  	<time datetime="2017-03-10T08:36:27.057Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://blog.bblovedd.com/effect/20170103Text-overflow-ellipsis.html" target="_blank" rel="external">查看效果</a></p>
+<a id="more"></a>
+<p>Css部分<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">			width: 300px;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		.demo &#123;</div><div class="line">			height: 40px;</div><div class="line">			overflow: hidden;</div><div class="line">			text-overflow: ellipsis;</div><div class="line">			white-space: nowrap;</div><div class="line">		&#125;</div><div class="line">		.demo0 &#123;</div><div class="line">			height: 40px;</div><div class="line">			display: -webkit-box;</div><div class="line">			-webkit-box-orient: vertical;</div><div class="line">			-webkit-line-clamp: 2;</div><div class="line">			overflow: hidden;</div><div class="line">		&#125;</div><div class="line">		.demo1 &#123;</div><div class="line">			height: 40px;</div><div class="line">			position: relative;</div><div class="line">			line-height: 20px;</div><div class="line">			max-height: 40px;</div><div class="line">			overflow: hidden;</div><div class="line">		&#125;</div><div class="line">		.demo1::after &#123;</div><div class="line">			content: <span class="string">"..."</span>;</div><div class="line">			position: absolute;</div><div class="line">			bottom: 0;</div><div class="line">			right: 0;</div><div class="line">			padding-left: 40px;</div><div class="line">			background: -webkit-linear-gradient(left, transparent, <span class="comment">#fff 55%);</span></div><div class="line">			background: -o-linear-gradient(right, transparent, <span class="comment">#fff 55%);</span></div><div class="line">			background: -moz-linear-gradient(right, transparent, <span class="comment">#fff 55%);</span></div><div class="line">			background: linear-gradient(to right, transparent, <span class="comment">#fff 55%);</span></div><div class="line">		&#125;</div><div class="line">		.demo2 &#123;</div><div class="line">			<span class="built_in">float</span>: left;</div><div class="line">			width: 100px;</div><div class="line">		&#125;</div><div class="line">		.An-ellipsis &#123;</div><div class="line">			display: none;</div><div class="line">			position: relative;</div><div class="line">			top: 23px;</div><div class="line">			left: -8px;</div><div class="line">			<span class="built_in">float</span>: left;</div><div class="line">		&#125;</div><div class="line">		.demo3 &#123;</div><div class="line">			width: 100px;</div><div class="line">			height: 36px;</div><div class="line">			display: -webkit-box;</div><div class="line">			-webkit-line-clamp: 2;</div><div class="line">			-webkit-box-orient: vertical;</div><div class="line">			position: relative;</div><div class="line">			overflow: hidden;</div><div class="line">		&#125;</div><div class="line">		.demo3::after &#123;</div><div class="line">			content: <span class="string">"..."</span>;</div><div class="line">			font-weight: bold;</div><div class="line">			position: absolute;</div><div class="line">			bottom: 0;</div><div class="line">			right: 0;</div><div class="line">			padding-left: 2em;</div><div class="line">			background-color: <span class="comment">#fff;</span></div><div class="line">		&#125;</div></pre></td></tr></table></figure></p>
+<p>Html部分，此处引入了bootstrap<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"</span>&gt;</div><div class="line">&lt;h3&gt;单行文本溢出显示省略号&lt;/h3&gt;</div><div class="line">	&lt;p class=<span class="string">"demo"</span>&gt;这个属性只支持单行文本的溢出显示省略号，如果我们要实现多行文本溢出显示省略号呢。&lt;/p&gt;</div><div class="line">	&lt;h3&gt;多行文本溢出显示省略号&lt;/h3&gt;</div><div class="line">	&lt;p class=<span class="string">"demo0"</span>&gt;因使用了WebKit的CSS扩展属性，该方法适用于WebKit浏览器及移动端；注： 1. -webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性： 2. display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。 3. -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。&lt;/p&gt;</div><div class="line">	&lt;p class=<span class="string">"demo1"</span>&gt;适用范围：该方法适用范围广，但文字未超出行的情况下也会出现省略号,可结合js优化该方法。注： 1. 将height设置为line-height的整数倍，防止超出的文字露出。 2. 给p::after添加渐变背景可避免文字只显示一半。 3. 由于ie6-7不显示content内容，所以要添加标签兼容ie6-7（如：&lt;span&gt;…&lt;span/&gt;）；兼容ie8需要将::after替换成:after。&lt;/p&gt;</div><div class="line">	&lt;p class=<span class="string">"demo2"</span>&gt;适用范围：该方法适用范围广。需要使用jquery.只能显示一个，多个demo2标签不行&lt;/p&gt;</div><div class="line">	&lt;span class=<span class="string">"An-ellipsis"</span>&gt;...&lt;/span&gt;</div><div class="line">		&lt;p class=<span class="string">"demo2"</span>&gt;适用范围：该方法适用范围广。多行文本溢出显示&lt;/p&gt;</div><div class="line">		&lt;span class=<span class="string">"An-ellipsis"</span>&gt;...&lt;/span&gt;</div><div class="line">		&lt;p class=<span class="string">"demo2"</span>&gt;适用范围：该方法适用范围广。多行文本溢出显示&lt;/p&gt;</div><div class="line">		&lt;span class=<span class="string">"An-ellipsis"</span>&gt;...&lt;/span&gt;</div><div class="line">		&lt;p class=<span class="string">"demo3"</span>&gt;适用范围：该方法适用范围广，但文字未超出行的情况下也会出现省略号,可结合js优化该方法。注： 1. 将height设置为line-height的整数倍，防止超出的文字露出。 2. 给p::after添加渐变背景可避免文字只显示一半。 3. 由于ie6-7不显示content内容，所以要添加标签兼容ie6-7（如：&lt;span&gt;…&lt;span/&gt;）；兼容ie8需要将::after替换成:after。&lt;/p&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>jquery部分，此处引入了jquery<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"http://code.jquery.com/jquery-1.8.3.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">wordLimit</span></span>()&#123;</div><div class="line">	<span class="keyword">if</span> ($(<span class="string">".demo2"</span>).height()&gt;40)&#123;</div><div class="line">$(<span class="string">".demo2"</span>).css(&#123;<span class="string">"height"</span>:<span class="string">"40"</span>,<span class="string">"overflow"</span>:<span class="string">"hidden"</span>&#125;)</div><div class="line">$(<span class="string">".An-ellipsis"</span>).css(&#123;<span class="string">"display"</span>:<span class="string">"block"</span>&#125;)</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line">wordLimit();</div><div class="line">//文字溢出显示省略号,这个也可以</div><div class="line">// <span class="built_in">set</span>Timeout(<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">//     var p_all = $(<span class="string">".product-name"</span>)</div><div class="line">//     var width_p = $(<span class="string">".product-name"</span>).eq(0).width()</div><div class="line">//     <span class="keyword">for</span> (var i = 0; i &lt; p_all.length; i++) &#123;</div><div class="line">//         var leng = p_all.eq(i).text().length</div><div class="line">//         <span class="keyword">if</span> (leng &gt; width_p / 12 * 2) &#123;</div><div class="line">//             $(<span class="string">".product-content .An-ellipsis"</span>).eq(i).css(&#123;</div><div class="line">//                 <span class="string">"display"</span>: <span class="string">"block"</span></div><div class="line">//             &#125;)</div><div class="line">//         &#125;</div><div class="line">//     &#125;</div><div class="line">// &#125;, 500)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Css</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.bblovedd.com/2017/03/10/Text-overflow-ellipsis/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/03/10/Text-wrapping/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          文本自动换行,文本强制换行
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/03/10/Fade-out-the-pop-up-layer/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jquery淡入淡出显示弹出层</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Text-overflow-ellipsis" data-title="文本溢出显示省略号" data-url="http://www.bblovedd.com/2017/03/10/Text-overflow-ellipsis/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
+
 
 
           </div>
@@ -236,9 +336,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
@@ -453,38 +553,6 @@
                 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
                 <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-  </div>
-</body>
-</html>o/dimsemenov/pen/yyBWoR -->
                 <!-- element will get class pswp__preloader--active when preloader is running -->
                 <div class="pswp__preloader">
                     <div class="pswp__preloader__icn">

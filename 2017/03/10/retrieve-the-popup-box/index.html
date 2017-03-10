@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.bblovedd.com">
-  <title>Tag: css | Amy0724&#39;s blog</title>
+  <title>jquery-调取弹出框 | Amy0724&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="懒癌犯了，也得吃饭">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Amy0724's blog">
-<meta property="og:url" content="http://www.bblovedd.com/tags/css/index.html">
+  <meta name="description" content="查看效果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jquery-调取弹出框">
+<meta property="og:url" content="http://www.bblovedd.com/2017/03/10/retrieve-the-popup-box/index.html">
 <meta property="og:site_name" content="Amy0724's blog">
-<meta property="og:description" content="懒癌犯了，也得吃饭">
+<meta property="og:description" content="查看效果">
+<meta property="og:updated_time" content="2017-03-10T09:33:17.102Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Amy0724's blog">
-<meta name="twitter:description" content="懒癌犯了，也得吃饭">
+<meta name="twitter:title" content="jquery-调取弹出框">
+<meta name="twitter:description" content="查看效果">
   
     <link rel="alternative" href="/atom.xml" title="Amy0724&#39;s blog" type="application/atom+xml">
   
@@ -156,64 +157,158 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-retrieve-the-popup-box" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/10/highly-adaptive/" class="archive-article-date">
-  	<time datetime="2017-03-10T09:22:18.210Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/10/highly-adaptive/">滚动条到底部了</a>
+    <h1 class="article-title" itemprop="name">
+      jquery-调取弹出框
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/10/retrieve-the-popup-box/" class="archive-article-date">
+  	<time datetime="2017-03-10T09:30:40.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://blog.bblovedd.com/effect/20170220retrieve-the-popup-box.html" target="_blank" rel="external">查看效果</a></p>
+<a id="more"></a>
+<p>直接上代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;button <span class="built_in">type</span>=<span class="string">"button"</span> name=<span class="string">"button"</span>&gt;点我显示弹出框&lt;/button&gt;</div><div class="line">	&lt;script src=<span class="string">"http://code.jquery.com/jquery-1.8.3.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">	&lt;script src=<span class="string">"jquery.alertwindow1.js"</span>&gt;&lt;/script&gt;</div><div class="line">	&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">		$(<span class="string">"button"</span>).on(<span class="string">'click'</span>, <span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">			jQuery.alertWindow(<span class="string">"哎呀"</span>, <span class="string">"你看到了呢"</span>);</div><div class="line">		&#125;)</div><div class="line">	&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>jquery.alertwindow1.js部分<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">jQuery.extend(&#123;</div><div class="line">    alertWindow: <span class="keyword">function</span>(e, t) &#123;</div><div class="line">			 // console.log(<span class="string">"清空之前运行的数据"</span>)</div><div class="line">	 $(<span class="string">".alertWindow1"</span>).detach();</div><div class="line">        var e = e,</div><div class="line">            t = t;</div><div class="line">			<span class="keyword">if</span> ($(<span class="string">"body"</span>).find(<span class="string">".alertWindow1"</span>).length === 0) &#123;</div><div class="line">            var i = <span class="string">'&lt;div class="alertWindow1" style="width: 185px;height: 82px;background-color: rgba(0, 0, 0, 0.29);position: fixed;color: #fff;z-index:200;border-radius: 4px;font-size: 14px;text-align: center;display:none;"&gt;'</span></div><div class="line">                +<span class="string">'&lt;p class="tips-title" style="margin: 6px;"&gt;'</span></div><div class="line">                + e</div><div class="line">                +<span class="string">'&lt;/p&gt;'</span></div><div class="line">								+<span class="string">'&lt;div class="tips-content" style="background-color: rgba(0, 0, 0, 0.56);height: 45px;text-align: center;line-height: 20px;padding: 4px 8px 0 8px;"&gt;'</span></div><div class="line">                +<span class="string">'&lt;p&gt;'</span></div><div class="line">								+	t</div><div class="line">                +<span class="string">'&lt;/p&gt;'</span></div><div class="line">								+<span class="string">"&lt;/div&gt;"</span></div><div class="line">								+<span class="string">"&lt;/div&gt;"</span>;</div><div class="line">		&#125;</div><div class="line">            $(<span class="string">"body"</span>).append(i);</div><div class="line">            var window_height = $(window).height();</div><div class="line">            var window_width = $(window).width();</div><div class="line">            // 根据窗口位置判定弹出层的位置</div><div class="line">            $(<span class="string">".alertWindow1"</span>).css(&#123;</div><div class="line">                <span class="string">"top"</span>: parseInt(window_height) / 2 - 41 + <span class="string">"px"</span>,</div><div class="line">                <span class="string">"left"</span>: parseInt(window_width) / 2 - 92.5 + <span class="string">"px"</span></div><div class="line">            &#125;)</div><div class="line"></div><div class="line">            $(<span class="string">".tips-title"</span>).text(e);</div><div class="line">            $(<span class="string">".alertWindowContent"</span>).text(t);</div><div class="line"></div><div class="line">            //慢速显示，延迟1000ms后5000ms消失</div><div class="line">			$(<span class="string">".alertWindow1"</span>).css(&#123;<span class="string">"display"</span>:<span class="string">"block"</span>&#125;);</div><div class="line">      <span class="keyword">if</span>(parseInt($(<span class="string">".tips-content p"</span>).height()) &gt; 22 )&#123;</div><div class="line">    // 根据字体的多少判定弹出层内容的位置</div><div class="line">    $(<span class="string">".tips-content p"</span>).css(&#123;<span class="string">"margin-top"</span>:<span class="string">"4px"</span>&#125;)</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">    $(<span class="string">".tips-content p"</span>).css(&#123;<span class="string">"padding-top"</span>:<span class="string">"0"</span>&#125;)</div><div class="line">    &#125;</div><div class="line">            $(<span class="string">".alertWindow1"</span>).fadeIn(<span class="string">"slow"</span>);</div><div class="line">            $(<span class="string">".alertWindow1"</span>).delay(1000).fadeOut(1000);</div><div class="line">    &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line">/* console.log(<span class="string">"清空之前运行的数据"</span>)</div><div class="line">	 $(<span class="string">".alertWindow1"</span>).detach();//清空之前运行的数据 */</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.bblovedd.com/2017/03/10/retrieve-the-popup-box/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/03/10/input-summary/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          input的一点点
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/03/10/highly-adaptive/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">滚动条到底部了</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="retrieve-the-popup-box" data-title="jquery-调取弹出框" data-url="http://www.bblovedd.com/2017/03/10/retrieve-the-popup-box/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
+
 
 
           </div>
@@ -236,9 +331,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
@@ -453,38 +548,6 @@
                 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
                 <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-  </div>
-</body>
-</html>o/dimsemenov/pen/yyBWoR -->
                 <!-- element will get class pswp__preloader--active when preloader is running -->
                 <div class="pswp__preloader">
                     <div class="pswp__preloader__icn">
