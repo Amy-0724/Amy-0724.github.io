@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title>在cookie有效时间内只显示一次</title>
+	<meta name="description" content="amy0724-在cookie有效时间内只显示一次">
+	<meta name="keywords" content="在cookie有效时间内只显示一次">
+	<meta name="robots" content="INDEX,FOLLOW">
+</head>
+
+<body>
+	<style media="screen">
+		.off {
+			display: none;
+		}
+
+		#close {
+			border: .5px solid #ccc
+		}
+	</style>
+	<div id="close">
+		点我,在2天内不显示,不信刷新看看,可在cookie里面将我删除，就能显示啦~这个需要用域名或者localhost上测试才可以哦~
+	</div>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$("#close").click(function() {
+			$("#close").addClass("off");
+			var this_date = new Date();
+			var this_day = 2;
+			var die_time = this_date.setTime(this_date.getTime() + this_day * 3600 * 24 * 1000)
+			document.cookie = "ad=" + 'off' + ";expires=" + die_time;
+			// console.log(document.cookie)
+		});
+		if ('ad=off' == document.cookie.split(';')[0]) {
+			$("#close").addClass("off");
+		}
+	</script>
+</body>
+
+</html>

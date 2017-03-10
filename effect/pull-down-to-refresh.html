@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title>下拉刷新</title>
+	<meta name="description" content="amy0724-下拉刷新">
+	<meta name="keywords" content="下拉刷新">
+	<meta name="robots" content="INDEX,FOLLOW">
+	<link rel="stylesheet" href="pull-down-to-refresh/dropload.css">
+
+</head>
+
+<body>
+	<style media="screen">
+	body {width: 100%;max-width: 750px;margin: auto;}
+.page1 {height: 200px;width: 100%;background-color: #f1f1f1;}
+.page2 img {width: 100%;}
+/* lazy min-height */
+.proportional-picture {min-height: 50px;}
+	</style>
+<div class="page1">
+	我只是路人甲
+	<a href="https://github.com/ximan/dropload">参考站点</a>
+
+</div>
+<div class="page1">
+	我只是路人乙
+</div>
+<div class="page1">
+	我只是路人丙
+</div>
+<div class="page2">
+
+</div>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="pull-down-to-refresh/dropload.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	//下拉刷新
+ $(function() {
+    // 页数
+    var page = 0;
+    // 每页展示10个
+    var size = 2;
+    // dropload
+    $('.page2').dropload({
+        scrollArea: window,
+        loadDownFn: function(me) {
+          page++;
+          // 拼接HTML
+          var result = '';
+            //("ajax success");
+            $.ajax({
+                type: 'GET',
+                url: 'pull-down-to-refresh/1.json',//这里需要放接口文件
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(data) {
+                  // console.log(data);
+                  var arrLen = data.length;
+                  //console.log(arrLen)
+                    if(arrLen > 0){
+                      //console.log(2)
+                        for (var i = 0; i < arrLen; i++) {
+													//清空之前的数据
+													// $(".lazy").detach();
+                          result += '<div class="pull-down">'
+													+'<img src="'+data[i].pic+'" alt="'+data[i].productname+'" class="proportional-picture">'
+													+'<p>我是刷新出来的</p>'
+													+'</div>';
+                        }
+                        //console.log(result)
+                        $(".page2").append(result);
+												// $(".page2").append(lazy);
+                    // 如果没有数据
+                  } else {
+                        // 锁定
+                        me.lock();
+                        // 无数据
+                        me.noData();
+                        //console.log(4)
+                    }
+                      //console.log(5)
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        // 插入数据到页面，放到最后面
+                        $('.lists').append(result);
+                        // 每次数据插入，必须重置
+                        me.resetload();
+                    },1000);
+                    //console.log(6)
+                },
+                error: function(xhr, type){
+                    // alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                      //console.log(7)
+                }
+            });
+        }
+    });
+});
+	</script>
+</body>
+
+</html>

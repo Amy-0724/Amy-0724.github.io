@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title>jquery-调取弹出框</title>
+	<meta name="description" content="amy0724-jquery调取弹出框">
+	<meta name="keywords" content="jquery调取弹出框">
+	<meta name="robots" content="INDEX,FOLLOW">
+</head>
+
+<body>
+	<button type="button" name="button">点我显示弹出框</button>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="jquery.alertwindow1.js"></script>
+	<script type="text/javascript">
+		$("button").on('click', function() {
+			jQuery.alertWindow("哎呀", "你看到了呢");
+		})
+	</script>
+
+</body>
+
+</html>

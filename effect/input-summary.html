@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title>input的一点点</title>
+	<meta name="description" content="input的一点点">
+	<meta name="keywords" content="input的一点点，input，我认识的input">
+	<meta name="robots" content="INDEX,FOLLOW">
+	<link rel="stylesheet" href="pull-down-to-refresh/dropload.css">
+
+</head>
+
+<body>
+	<style media="screen">
+	.all {width: 100%;max-width: 750px;margin: auto;}
+	.code-block {background-color: #dadada;}
+.out {outline:none;}
+.color-red::-webkit-input-placeholder { /* WebKit browsers */
+    color:    red;
+}
+.color-red:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    red;
+}
+.color-red::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    red;
+}
+.color-red:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    red;
+}
+.liu {width: 248px;}
+.model {border: .5px solid #ccc;}
+	</style>
+	<div class="all">
+		<p>input的提示语，只需要加入 placeholder=""</p>
+		<input type="text" name="" placeholder="我就是提示语～(￣▽￣～)~" value="" class="">
+		<p>鼠标点击进去后有黄色的边框，只需要css中加入outline:none;</p>
+		<input type="text" name="" placeholder="我就是提示语～(￣▽￣～)~" value="" class="out">
+		<p>input的提示语的颜色修改</p>
+		<div class="code-block">
+			::-webkit-input-placeholder { /* WebKit browsers */<br>
+			    color:    #ec8054;<br>
+			}<br>
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */<br>
+			    color:    #ec8054;<br>
+			}<br>
+			::-moz-placeholder { /* Mozilla Firefox 19+ */<br>
+			    color:    #ec8054;<br>
+			}<br>
+			:-ms-input-placeholder { /* Internet Explorer 10+ */<br>
+			    color:    #ec8054;<br>
+			}
+		</div>
+		<input type="text" name="" placeholder="我就是提示语～(￣▽￣～)~" value="" class="out color-red">
+		<p>禁止输入，只需要加上readonly="readonly"</p>
+		<input type="text" name="" placeholder="我说不能输入，你偏偏不信～(￣▽￣～)~" value="" class="out liu" readonly="readonly">
+		<p>隐藏，只需要加上type="hidden"</p>
+		<input type="hidden" name="" value="">
+		<p>input不能换行，我们可以用模仿的div来实现换行，只需要加入contenteditable="true"就可以实现输入</p>
+		<div class="model" contenteditable="true"></div>
+		<p>模仿的div也想加上提示语</p>
+		<div class="model" contenteditable="true" placeholder="我说不能输入，你偏偏不信～(￣▽￣～)~"></div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+</body>
+
+</html>
