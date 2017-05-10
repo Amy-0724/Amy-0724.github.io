@@ -1,0 +1,1635 @@
+@charset "utf-8";
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+    background: /*url(../img/body_bg.png)*/
+    #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+
+/*  float */
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+
+/* clear float */
+
+.clear {
+    clear: both;
+    width: 100%;
+    height: 5 px
+}
+
+.clear-18 {
+    clear: both;
+    width: 100%;
+    height: 18px
+}
+
+.clear-no {
+    clear: both;
+}
+
+
+/* family */
+
+.song {
+    font-family: "宋体";
+}
+
+
+/*header*/
+
+button {
+    border: 1px solid #ccc;
+}
+
+
+/*case1*/
+
+#case1 h2 {
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+    height: 60px;
+}
+
+#case1 h2 span {
+    float: left;
+    font-size: 20px;
+    position: relative;
+}
+
+#case1 h2 span:nth-child(1) {
+    -webkit-animation: jump 1.4s linear 0s infinite alternate;
+}
+
+#case1 h2 span:nth-child(2) {
+    -webkit-animation: jump 1.4s linear 0.2s infinite alternate;
+}
+
+#case1 h2 span:nth-child(3) {
+    -webkit-animation: jump 1.4s linear 0.4s infinite alternate;
+}
+
+#case1 h2 span:nth-child(4) {
+    -webkit-animation: jump 1.4s linear 0.6s infinite alternate;
+}
+
+#case1 h2 span:nth-child(5) {
+    -webkit-animation: jump 1.4s linear 0.8s infinite alternate;
+}
+
+#case1 h2 span:nth-child(6) {
+    -webkit-animation: jump 1.4s linear 1s infinite alternate;
+}
+
+#case1 h2 span:nth-child(7) {
+    -webkit-animation: jump 1.4s linear 1.2s infinite alternate;
+}
+
+#case1 h2 span:nth-child(8) {
+    -webkit-animation: jump 1.4s linear 1.4s infinite alternate;
+}
+
+@-webkit-keyframes jump {
+    0% {
+        top: 0px;
+        color: red;
+    }
+    50% {
+        top: -10px;
+        color: blue;
+    }
+    100% {
+        top: 10px;
+        color: green;
+    }
+}
+
+
+/* case2 strat */
+
+#header {
+    width: 100%;
+    height: 8rem;
+    background: #4276B6;
+    border-bottom: 1px solid #0172FD;
+}
+
+.header {
+    margin: auto;
+    width: 70%;
+    color: #F3F3F3;
+    padding-top: 20px;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: " 微软雅黑 ";
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+.header h2 {
+    text-align: center;
+    display: inherit;
+    font-family: " 宋体 ";
+    font-size: 1.2rem;
+}
+
+#label {
+    position: relative;
+    top: -1.5rem;
+    left: 0;
+    width: 78%;
+    float: left;
+    height: 3rem;
+    border: 1px solid #f0b500;
+    background-color: #FFCC00;
+}
+
+#label p {
+    text-align: center;
+    width: 8rem;
+    height: 2rem;
+    background-color: #FFE788;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-left: 32%;
+    border: 1px solid #f0b500;
+}
+
+#github-logo {
+    margin-top: -32px;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    background: url(images/octocat-logo.png) no-repeat;
+}
+
+
+/* content  */
+
+#content {
+    margin: auto;
+    position: relative;
+    top: 1rem;
+    width: 50rem;
+    height: auto;
+    background: #fff;
+}
+
+
+/* part */
+
+.part {
+    width: 100%;
+}
+
+.part h3 {
+    width: 70%;
+}
+
+
+/* p-content  */
+
+.p-content {
+    /*width: 90%; height: 10rem;*/
+    margin: 2rem;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #fff;
+}
+
+
+/* logo */
+
+.logo {
+    margin: 0.5rem auto;
+    width: 40%;
+    animation: myfirst 5s;
+    -moz-animation: myfirst 5s;
+    /* Firefox */
+    -webkit-animation: myfirst 5s;
+    /* Safari and Chrome */
+    -o-animation: myfirst 5s;
+    /* Opera */
+}
+
+@keyframes myfirst {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-moz-keyframes myfirst
+/* Firefox */
+
+{
+    from {
+        width: 100%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-webkit-keyframes myfirst
+/* Safari and Chrome */
+
+{
+    from {
+        width: 100%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-o-keyframes myfirst
+/* Opera */
+
+{
+    from {
+        width: 100%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.box-bd {
+    position: relative;
+    padding-top: 10px;
+}
+
+.ben, .dai {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50px;
+    font-size: 50px;
+    font-family: "宋体";
+    font-weight: 800;
+    color: #fff;
+    border: 5px solid #fefefe;
+    text-align: center;
+}
+
+.ben {
+    float: left;
+    left: 0%;
+    animation: my1 5s;
+    -moz-animation: my1 5s;
+    /* Firefox */
+    -webkit-animation: my1 5s;
+    /* Safari and Chrome */
+    -o-animation: my1 5s;
+    /* Opera */
+}
+
+@keyframes my1 {
+    0% {
+        left: 0%
+    }
+    50% {
+        left: 10%
+    }
+    100% {
+        left: 0%
+    }
+}
+
+@-moz-keyframes my1
+/* Firefox */
+
+{
+    0% {
+        left: 0%
+    }
+    50% {
+        left: 10%
+    }
+    100% {
+        left: 0%
+    }
+}
+
+@-webkit-keyframes my1
+/* Safari and Chrome */
+
+{
+    0% {
+        left: 0%
+    }
+    50% {
+        left: 10%
+    }
+    100% {
+        left: 0%
+    }
+}
+
+@-o-keyframes my1
+/* Opera */
+
+{
+    0% {
+        left: 0%
+    }
+    50% {
+        left: 10%
+    }
+    100% {
+        left: 0%
+    }
+}
+
+.dai {
+    left: 24%;
+}
+
+.box-love {
+    position: relative;
+}
+
+#l, #v, #e {
+    position: absolute;
+    font-size: 50px;
+    font-family: "宋体";
+    font-weight: 800;
+}
+
+#l {
+    color: #FFF900;
+    left: 0;
+    top: 60px;
+    animation: show0 10s;
+    -moz-animation: show0 10s;
+    /* Firefox */
+    -webkit-animation: show0 10s;
+    /* Safari and Chrome */
+    -o-animation: show0 10s;
+    /* Opera */
+}
+
+@keyframes show0 {
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-moz-keyframes show0
+/* Firefox */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-webkit-keyframes show0
+/* Safari and Chrome */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-o-keyframes show0
+/* Opera */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+#o {
+    animation: show1 10s;
+    -moz-animation: show1 10s;
+    /* Firefox */
+    -webkit-animation: show1 10s;
+    /* Safari and Chrome */
+    -o-animation: show1 10s;
+    /* Opera */
+}
+
+@keyframes show1 {
+    0%, 30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-moz-keyframes show1
+/* Firefox */
+
+{
+    0%, 30% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-webkit-keyframes show1
+/* Safari and Chrome */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-o-keyframes show1
+/* Opera */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+#v {
+    color: #F207FF;
+    left: 35%;
+    top: 90px;
+    animation: show2 10s;
+    -moz-animation: show2 10s;
+    /* Firefox */
+    -webkit-animation: show2 10s;
+    /* Safari and Chrome */
+    -o-animation: show2 10s;
+    /* Opera */
+}
+
+@keyframes show2 {
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-moz-keyframes show2
+/* Firefox */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-webkit-keyframes show2
+/* Safari and Chrome */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-o-keyframes show2
+/* Opera */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 90px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+#e {
+    color: #00FF45;
+    left: 50%;
+    top: 60px;
+    animation: show3 10s;
+    -moz-animation: show3 10s;
+    /* Firefox */
+    -webkit-animation: show3 10s;
+    /* Safari and Chrome */
+    -o-animation: show3 10s;
+    /* Opera */
+}
+
+@keyframes show3 {
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-moz-keyframes show3
+/* Firefox */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-webkit-keyframes show3
+/* Safari and Chrome */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+@-o-keyframes show3
+/* Opera */
+
+{
+    0%, 50% {
+        top: -100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        top: 60px;
+        opacity: 1;
+        filter: alpha(opacity=1);
+    }
+}
+
+.heart {
+    position: relative;
+    top: 11px;
+    left: 11%;
+    width: 100px;
+    height: 90px;
+    float: left;
+    -webkit-animation: fadeOut 2.0s infinite ease-in-out;
+    animation: fadeOut 2.0s infinite ease-in-out;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    -webkit-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    - webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        -webkit-transform: scale(0.0);
+    }
+    to {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    form {
+        transform: scale(0.0);
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+
+/* logo end */
+
+
+/* dai swing */
+
+
+/*head-box*/
+
+.d-h-box {
+    width: 18.75em;
+    height: 12.5em;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*head*/
+
+.head {
+    width: 12.5em;
+    height: 9.375em;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0em 0.75em 0.375em #888888, 0.375em 1em 2.5em #ccc inset;
+    position: relative;
+    top: 1.25em;
+    left: 0.3125em;
+    z-index: 99;
+}
+
+
+/*ear*/
+
+.ear-l {
+    box-shadow: -0.1875em -0.1875em 0.9375em #888383, 1.25em 0.9375em 0.9375em #ccc inset;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: relative;
+    top: -8.9375em;
+    z-index: 50;
+    left: 0.75em;
+}
+
+.ear-r {
+    box-shadow: 0.1875em -0.3125em 0.875em #888383, -0.9375em 1.375em 1.3125em #ccc inset;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: relative;
+    top: -11.25em;
+    left: 54%;
+    z-index: 50;
+}
+
+
+/*eyes left*/
+
+.eyes-l {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 2.6875em;
+    height: 3.3125em;
+    border-radius: 50%;
+    position: relative;
+    top: -10.8125em;
+    left: 10%;
+    z-index: 100;
+    background-color: #575454;
+}
+
+.w-l-01 {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 2em;
+    height: 2.6875em;
+    border-radius: 50%;
+    position: relative;
+    top: -13.8125em;
+    left: 2.1875em;
+    z-index: 101;
+    background-color: #fff;
+}
+
+.b-l-01 {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 1.75em;
+    height: 2.375em;
+    border-radius: 50%;
+    position: relative;
+    top: -16.3125em;
+    left: 2.3125em;
+    z-index: 102;
+    background-color: #575454;
+}
+
+.w-l-02 {
+    display: block;
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 0.625em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    top: -17.625em;
+    left: 2.6875em;
+    z-index: 120;
+    background-color: #fff;
+}
+
+.w-l-03 {
+    display: block;
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 0.625em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    top: -19.0625em;
+    left: 3.375em;
+    z-index: 120;
+    background-color: #fff;
+}
+
+
+/*eyes right*/
+
+.eyes-r {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 2.6875em;
+    height: 3.3125em;
+    border-radius: 50%;
+    position: relative;
+    top: -21.125em;
+    left: 44%;
+    z-index: 100;
+    background-color: #575454;
+}
+
+.w-r-01 {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 2em;
+    height: 2.6875em;
+    border-radius: 50%;
+    position: relative;
+    top: -24.125em;
+    left: 8.625em;
+    z-index: 101;
+    background-color: #fff;
+}
+
+.b-r-01 {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 1.75em;
+    height: 2.375em;
+    border-radius: 50%;
+    position: relative;
+    top: -26.6875em;
+    left: 8.75em;
+    z-index: 102;
+    background-color: #575454;
+}
+
+.w-r-02 {
+    display: block;
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 0.625em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    top: -27.75em;
+    left: 9.1875em;
+    z-index: 120;
+    background-color: #fff;
+}
+
+.w-r-03 {
+    display: block;
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 0.625em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    top: -29.3125em;
+    left: 9.8125em;
+    z-index: 120;
+    background-color: #fff;
+}
+
+.noise {
+    box-shadow: 0 0.125em 0.625em #888383;
+    width: 0.3125em;
+    height: 0.25em;
+    border-radius: 50%;
+    position: relative;
+    top: -27.625em;
+    left: 6.25em;
+    z-index: 102;
+    background-color: #000;
+}
+
+
+/*head swing*/
+
+.d-h-box {
+    animation: myfirst 30s infinite;
+    -moz-animation: myfirst 30s infinite;
+    /* Firefox */
+    -webkit-animation: myfirst 30s infinite;
+    /* Safari 和 Chrome */
+}
+
+@keyframes myfirst {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(6deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-6deg);
+    }
+    100 {
+        transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes myfirst
+/* Firefox */
+
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(6deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-6deg);
+    }
+    100 {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes myfirst
+/* Safari 和 Chrome */
+
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100 {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* white eyes 02 swing */
+
+.w-l-02 {
+    animation: white-l-02 3s infinite 2s;
+    -moz-animation: white-l-02 3s infinite 2s;
+    /* Firefox */
+    -webkit-animation: white-l-02 3s infinite 2s;
+    /* Safari 和 Chrome */
+}
+
+@keyframes white-l-02 {
+    0% {
+        top: -17.625em;
+    }
+    10% {
+        top: -17.8125em;
+    }
+    20% {
+        top: -17.625em;
+    }
+    20% {
+        top: -17.4375em;
+    }
+    40% {
+        top: -17.625em;
+    }
+}
+
+@-moz-keyframes white-l-02
+/* Firefox */
+
+{
+    0% {
+        top: -17.625em;
+    }
+    10% {
+        top: -17.8125em;
+    }
+    20% {
+        top: -17.6875em;
+    }
+    20% {
+        top: -17.5em;
+    }
+    40% {
+        top: -17.625em;
+    }
+}
+
+@-webkit-keyframes white-l-02
+/* Safari 和 Chrome */
+
+{
+    0% {
+        top: -17.625em;
+    }
+    5% {
+        top: -17.75em;
+    }
+    10% {
+        top: -17.5625em;
+    }
+    15% {
+        top: -17.375em;
+    }
+    20% {
+        top: -17.625em;
+    }
+}
+
+.w-r-02 {
+    animation: white-r-02 3s infinite 2s;
+    -moz-animation: white-r-02 3s infinite 2s;
+    /* Firefox */
+    -webkit-animation: white-r-02 3s infinite 2s;
+    /* Safari 和 Chrome */
+}
+
+@keyframes white-r-02 {
+    0% {
+        top: -27.75em;
+    }
+    10% {
+        top: -27.9375em;
+    }
+    20% {
+        top: -27.75em;
+    }
+    20% {
+        top: -27.5625em;
+    }
+    40% {
+        top: -27.75em;
+    }
+}
+
+@-moz-keyframes white-r-02
+/* Firefox */
+
+{
+    0% {
+        top: -27.75em;
+    }
+    10% {
+        top: -28em;
+    }
+    20% {
+        top: -27.8125em;
+    }
+    20% {
+        top: -27.625em;
+    }
+    40% {
+        top: -27.75em;
+    }
+}
+
+@-webkit-keyframes white-r-02
+/* Safari 和 Chrome */
+
+{
+    0% {
+        top: -27.75em;
+    }
+    5% {
+        top: -27.875em;
+    }
+    10% {
+        top: -27.6875em;
+    }
+    15% {
+        top: -27.5em;
+    }
+    20% {
+        top: -27.75em;
+    }
+}
+
+
+/* white eyes 03 swing */
+
+.w-l-03 {
+    animation: white-l-03 3s infinite 2s;
+    -moz-animation: white-l-03 3s infinite 2s;
+    /* Firefox */
+    -webkit-animation: white-l-03 3s infinite 2s;
+    /* Safari 和 Chrome */
+}
+
+@keyframes white-l-03 {
+    0% {
+        top: -19.0625em;
+    }
+    10% {
+        top: -19.25em;
+    }
+    20% {
+        top: -19.0625em;
+    }
+    20% {
+        top: -18.875em;
+    }
+    40% {
+        top: -19.0625em;
+    }
+}
+
+@-moz-keyframes white-l-03
+/* Firefox */
+
+{
+    0% {
+        top: -19.0625em;
+    }
+    10% {
+        top: -19.3125em;
+    }
+    20% {
+        top: -19.125em;
+    }
+    20% {
+        top: -18.9375em;
+    }
+    40% {
+        top: -19.0625em;
+    }
+}
+
+@-webkit-keyframes white-l-03
+/* Safari 和 Chrome */
+
+{
+    0% {
+        top: -19.0625em;
+    }
+    5% {
+        top: -19.1875em;
+    }
+    10% {
+        top: -19em;
+    }
+    15% {
+        top: -18.875em;
+    }
+    20% {
+        top: -19.0625em;
+    }
+}
+
+.w-r-03 {
+    animation: white-r-03 3s infinite 2s;
+    -moz-animation: white-r-03 3s infinite 2s;
+    /* Firefox */
+    -webkit-animation: white-r-03 3s infinite 2s;
+    /* Safari 和 Chrome */
+}
+
+@keyframes white-r-03 {
+    0% {
+        top: -29.3125em;
+    }
+    10% {
+        top: -29.125em;
+    }
+    20% {
+        top: -29.3125em;
+    }
+    20% {
+        top: -29.5em;
+    }
+    40% {
+        top: -29.3125em;
+    }
+}
+
+@-moz-keyframes white-r-03
+/* Firefox */
+
+{
+    0% {
+        top: -29.3125em;
+    }
+    10% {
+        top: -29.0625em;
+    }
+    20% {
+        top: -29.25em;
+    }
+    20% {
+        top: -29.4375em;
+    }
+    40% {
+        top: -29.3125em;
+    }
+}
+
+@-webkit-keyframes white-r-03
+/* Safari 和 Chrome */
+
+{
+    0% {
+        top: -29.3125em;
+    }
+    5% {
+        top: -29.125em;
+    }
+    10% {
+        top: -29.25em;
+    }
+    15% {
+        top: -29.5em;
+    }
+    20% {
+        top: -29.3125em;
+    }
+}
+
+
+/* dai swing end */
+
+
+/*case2 end*/
+
+
+/*case3 strat*/
+
+
+/*css public start*/
+
+.floatfix {
+    *zoom: 1;
+}
+
+.floatfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*css public end*/
+
+
+/*slider start*/
+
+.slider-contaner {
+    width: 100%;
+    position: relative;
+}
+
+.item+.item {
+    opacity: 0;
+}
+
+.item {
+    width: 100%;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    background-size: 100%;
+}
+
+.focus-container {
+    position: absolute;
+    z-index: 7;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.focus-container li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+}
+
+.focus-item {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    animation-timing-function: linear;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+}
+
+.focus-item2, .focus-item3, .focus-item4, .focus-item5 {
+    opacity: 0;
+}
+
+.focus-container ul {
+    margin-left: 38%;
+}
+
+
+/*设置轮播焦点的位置*/
+
+.focus-container {
+    margin-top: -4%;
+}
+
+
+/*设置当前图片焦点的颜色*/
+
+.focus-item {
+    background: #51B1D9;
+}
+
+
+/*设置动画，请根据实际需要修改秒数*/
+
+.item, .focus-item {
+    animation-duration: 20s;
+}
+
+.item1, .focus-item1 {
+    animation-delay: -1s;
+}
+
+.item2, .focus-item2 {
+    animation-delay: 3s;
+}
+
+.item3, .focus-item3 {
+    animation-delay: 7s;
+}
+
+.item4, .focus-item4 {
+    animation-delay: 11s;
+}
+
+.item5, .focus-item5 {
+    animation-delay: 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        z-index: 2;
+    }
+    5% {
+        opacity: 1;
+        z-index: 1;
+    }
+    20% {
+        opacity: 1;
+        z-index: 1;
+    }
+    25% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+
+/*设置背景，响应式请利用媒体查询根据断点修改路径*/
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: yellow;
+}
+
+.item3 {
+    background-color: pink;
+}
+
+.item4 {
+    background-color: black;
+}
+
+.item5 {
+    background-color: purple;
+}
+
+
+/*设置图片的高度，请根据具体需要修改百分比，响应式及时修改此值*/
+
+.slider, .item {
+    padding-bottom: 40%;
+}
+
+
+/*case3 end*/
+
+
+/*csse4 strat*/
+/*case4 end*/
+
+
+/*case5 */
+.rotate-into {
+    display: block;
+    width: 80%;
+    height: 150px;
+    line-height: 150px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: lightgreen;
+    position: relative;
+    animation: rotateinto 2s infinite linear;
+    -moz-animation: rotateinto 2s infinite linear;
+    /* Firefox */
+    -webkit-animation: rotateinto 2s infinite linear;
+    /* Safari 和 Chrome */
+    -o-animation: rotateinto 2s infinite linear;
+    /* Opera */
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotateinto {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 0;
+        line-height: 0;
+        height: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 100;
+        filter: alpha(opacity=100);
+        width: 80%;
+        line-height: 150px;
+        height: 150px;
+    }
+}
+
+
+/*case5 end*/
+
+
+/*case6 strat*/
+
+.carousel {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    animation: rotatebg 10s infinite linear;
+    -moz-animation: rotatebg 10s infinite linear;
+    /* Firefox */
+    -webkit-animation: rotatebg 10s infinite linear;
+    /* Safari 和 Chrome */
+    -o-animation: rotatebg 10s infinite linear;
+    /* Opera */
+}
+@keyframes rotatebg {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.carousel img {
+  display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* Opera */
+
+}
+img:first-child{
+    top: 0px;
+    left: 125px;/* 300/2-50/2 */
+    animation: rotatephoto 10s infinite linear;
+    -webkit-animation: rotatephoto 10s infinite linear;
+    -moz-animation: rotatephoto 10s infinite linear;
+    transform-origin:top center;
+    -webkit-transform-origin:top center;
+    -moz-transform-origin:top center;
+}
+img:nth-child(2){
+    top: 150px;
+    left: 275px;
+    animation: rotatephoto 10s infinite linear;
+    -webkit-animation: rotatephoto 10s infinite linear;
+    -moz-animation: rotatephoto 10s infinite linear;
+    transform-origin:top center;
+    -webkit-transform-origin:top center;
+    -moz-transform-origin:top center;
+}
+img:nth-child(3){
+    top: 300px;
+    left: 125px;
+    animation: rotatephoto 10s infinite linear;
+    -webkit-animation: rotatephoto 10s infinite linear;
+    -moz-animation: rotatephoto 10s infinite linear;
+    transform-origin:top center;
+    -webkit-transform-origin:top center;
+    -moz-transform-origin:top center;
+}
+img:nth-child(4){
+    top: 125px;
+    left: -25px;
+    animation: rotatephoto 10s infinite linear;
+    -webkit-animation: rotatephoto 10s infinite linear;
+    -moz-animation: rotatephoto 10s infinite linear;
+    transform-origin:top center;
+    -webkit-transform-origin:top center;
+    -moz-transform-origin:top center;
+}
+
+
+@keyframes rotatephoto {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+/*case6 end*/
+section {margin-top: 20px;}
