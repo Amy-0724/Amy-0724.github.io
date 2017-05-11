@@ -6,9 +6,14 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend,
 
 body {
     font: 12px "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
-    background: /*url(../img/body_bg.png)*/
-    #fff;
+    background-color: #fff;
     -webkit-text-size-adjust: 100%;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 a {
@@ -1549,7 +1554,7 @@ button {
 
 
 /*case6 strat*/
-
+#case6 {height:450px;}
 .carousel {
     background-color: green;
     width: 300px;
