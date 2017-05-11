@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>css3的动画效果-走动的钟表</title>
+    <script src="screenadaptation.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <header>
+      <h1>走动的钟表</h1>
+    </header>
+    <section>
+      <div class="clock">
+        <p>12</p><p>3</p><p>6</p><p>9</p>
+        <p class="hour-hand"></p>
+        <p class="minute-hand"></p>
+        <p class="center-mind"></p>
+      </div>
+    </section>
+
+    <style media="screen">
+    @charset "utf-8";
+    body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        font: 12px "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+        max-width: 750px;
+        margin: auto;
+        position: relative;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    a {
+        color: #2d374b;
+        text-decoration: none
+    }
+
+    a:hover {
+        color: #cd0200;
+        text-decoration: underline
+    }
+
+    em {
+        font-style: normal
+    }
+
+    li {
+        list-style: none
+    }
+
+    img {
+        border: 0;
+        vertical-align: middle
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    p {
+        word-wrap: break-word
+    }
+
+
+    /* clock start */
+
+    .clock {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background-color: lightgreen;
+        border-radius: 50%;
+        position: relative;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        zoom: 1;
+        border: 1px solid #000;
+    }
+
+    .clock p {
+        position: absolute;
+        /*border: 1px solid;*/
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+        color: blueviolet;
+    }
+
+    .clock p:first-child {
+        top: 0;
+        left: 90px;
+        animation: star12 60s;
+        -moz-animation: star12 60s;
+        /* Firefox */
+        -webkit-animation: star12 60s;
+        /* Safari 和 Chrome */
+        -o-animation: star12 60s;
+    }
+
+    .clock p:nth-child(2) {
+        top: 90px;
+        left: 180px;
+        animation: star3 60s;
+        -moz-animation: star3 60s;
+        /* Firefox */
+        -webkit-animation: star3 60s;
+        /* Safari 和 Chrome */
+        -o-animation: star3 60s;
+    }
+
+    .clock p:nth-child(3) {
+        top: 180px;
+        left: 90px;
+        animation: star6 60s;
+        -moz-animation: star6 60s;
+        /* Firefox */
+        -webkit-animation: star6 60s;
+        /* Safari 和 Chrome */
+        -o-animation: star6 60s;
+    }
+
+    .clock p:nth-child(4) {
+        top: 90px;
+        left: 0px;
+        animation: star9 60s;
+        -moz-animation: star9 60s;
+        /* Firefox */
+        -webkit-animation: star9 60s;
+        /* Safari 和 Chrome */
+        -o-animation: star9 60s;
+    }
+
+    @keyframes star12 {
+        0% {
+            background-color: red;
+        }
+        2% {
+            background-color: lightgreen;
+        }
+    }
+
+    @keyframes star3 {
+        23% {
+            background-color: lightgreen;
+        }
+        25% {
+            background-color: red;
+        }
+        27% {
+            background-color: lightgreen;
+        }
+    }
+
+    @keyframes star6 {
+        48% {
+            background-color: lightgreen;
+        }
+        50% {
+            background-color: red;
+        }
+        52% {
+            background-color: lightgreen;
+        }
+    }
+
+    @keyframes star9 {
+        73% {
+            background-color: lightgreen;
+        }
+        75% {
+            background-color: red;
+        }
+        77% {
+            background-color: lightgreen;
+        }
+    }
+
+    section .clock .hour-hand {
+        height: 40px;
+        width: 6px;
+        background-color: black;
+        border: 1px solid;
+        left: 101px;
+        top: 100px;
+        opacity: 0.5;
+        animation: roatehd 3600s infinite linear;
+        -moz-animation: roatehd 3600s infinite linear;
+        /* Firefox */
+        -webkit-animation: roatehd 3600s infinite linear;
+        /* Safari 和 Chrome */
+        -o-animation: roatehd 3600s infinite linear;
+        -moz-transform: rotate(180deg) ;
+        -moz-transform-origin: 0% 0%;
+        -webkit-transform: rotate(180deg) ;
+        -webkit-transform-origin: 0% 0%;
+        -o-transform: rotate(180deg) ;
+        -o-transform-origin: 0% 0%;
+        transform: rotate(180deg) ;
+        transform-origin: 0% 0%
+    }
+
+    section .clock .minute-hand {
+        height: 60px;
+        width: 2px;
+        background-color: black;
+        border: 1px solid;
+        left: 99px;
+        top: 100px;
+        opacity: 0.3;
+        animation: roatehd 60s infinite linear;
+        -moz-animation: roatehd 60s infinite linear;
+        /* Firefox */
+        -webkit-animation: roatehd 60s infinite linear;
+        /* Safari 和 Chrome */
+        -o-animation: roatehd 60s infinite linear;
+        -moz-transform: rotate(180deg);
+        -moz-transform-origin: 0% 0%;
+        -webkit-transform: rotate(180deg);
+        -webkit-transform-origin: 0% 0%;
+        -o-transform: rotate(180deg) ;
+        -o-transform-origin: 0% 0%;
+        transform: rotate(180deg) ;
+        transform-origin: 0% 0%;
+    }
+
+    @keyframes roatehd {
+        0% {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+        }
+        100% {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+        }
+    }
+
+    section .clock .center-mind {
+        margin: 5px 0;
+        position: relative;
+        top: 90px;
+        left: 88px;
+        display: block;
+        color: rgba(236, 106, 106, 0.47);
+        width: 0px;
+        height: 0px;
+        border-right: 10px solid transparent;
+        border-bottom: 7px solid rgba(236, 106, 106, 0.47);
+        border-left: 10px solid transparent;
+        -moz-transform: rotate(35deg);
+        -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+        -o-transform: rotate(35deg);
+        transform: rotate(35deg);
+        animation: star 60S infinite linear;
+        -moz-animation: star 60S infinite linear;
+        /* Firefox */
+        -webkit-animation: star 60S infinite linear;
+        /* Safari 和 Chrome */
+        -o-animation: star 60S infinite linear;
+    }
+    @keyframes star {
+        0% {
+            color: rgba(236, 106, 106, 0.47);
+            border-bottom: 7px solid rgba(236, 106, 106, 0.47);
+        }
+        90% {
+          color: red;
+          border-bottom: 7px solid red;
+          animation:scale(1.0,1.0);
+        }
+        95% {
+          color: yellow;
+          border-bottom: 7px solid yellow;
+          animation:scale(2,2);
+        }
+        100% {
+          color: red;
+          border-bottom: 7px solid rgba(236, 106, 106, 0.47);
+          animation:scale(1.0,1.00);
+        }
+    }
+    section .clock .center-mind:before {
+        border-bottom: 8px solid rgba(236, 106, 106, 0.47);
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -4.5px;
+        left: -6.5px;
+        display: block;
+        content: '';
+        -webkit-transform: rotate(-35deg);
+        -moz-transform: rotate(-35deg);
+        -ms-transform: rotate(-35deg);
+        -o-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+        animation: starb 60S infinite linear;
+        -moz-animation: starb 60S infinite linear;
+        /* Firefox */
+        -webkit-animation: starb 60S infinite linear;
+        /* Safari 和 Chrome */
+        -o-animation: starb 60S infinite linear;
+    }
+    @keyframes starb {
+        0% {
+            border-bottom: 8px solid rgba(236, 106, 106, 0.47);
+        }
+        90% {
+          border-bottom: 8px solid red;
+          animation:scale(1,1);
+        }
+        95% {
+          border-bottom: 8px solid yellow;
+          animation:scale(2,2);
+        }
+        100% {
+          border-bottom: 8px solid rgba(236, 106, 106, 0.47);
+          animation:scale(1,1);
+        }
+    }
+    section .clock .center-mind:after {
+        position: absolute;
+        display: block;
+        color: rgba(236, 106, 106, 0.47);
+        top: .3px;
+        left: -10.5px;
+        width: 0px;
+        height: 0px;
+        border-right: 10px solid transparent;
+        border-bottom: 7px solid rgba(236, 106, 106, 0.47);
+        border-left: 10px solid transparent;
+        -webkit-transform: rotate(-70deg);
+        -moz-transform: rotate(-70deg);
+        -ms-transform: rotate(-70deg);
+        -o-transform: rotate(-70deg);
+        transform: rotate(-70deg);
+        content: '';
+        animation: star 60S infinite linear;
+        -moz-animation: star 60S infinite linear;
+        /* Firefox */
+        -webkit-animation: star 60S infinite linear;
+        /* Safari 和 Chrome */
+        -o-animation: star 60S infinite linear;
+    }
+
+    </style>
+</body>
+
+</html>
